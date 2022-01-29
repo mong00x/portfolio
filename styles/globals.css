@@ -1,14 +1,64 @@
+:root {
+  --primary-color: #fffae9;
+  --dark-color: #293462;
+  --accent1-color: #216583;
+  --accent2-color: #f76262;
+  --colum-gap: 1.5vw;
+}
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: var(--primary-color);
+  background: var(--dark-color);
+}
+
+::selection {
+  color: var(--primary-color);
+  background: var(--dark-color);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  color: var(--dark-color);
+  min-height: 100vh;
+  font-family: "PT Sans", sans-serif, -apple-system, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+button {
+  all: none;
+  all: unset;
+  cursor: pointer;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+button:focus,
+button:nth-child(1):focus {
+  box-shadow: inset 0 0 0 2px var(--dark-color),
+    inset 0 0 0 4px var(--primary-color);
+  background-color: #00000010;
+}
+
+h1 {
+  font-size: 4.5vw;
+  margin: 1.5vw 0;
+}
+h2 {
+  font-size: 3vw;
+  margin: 1.5vw 0;
+}
+h3 {
+  font-size: 2.5vw;
+  margin: 1.5vw 0;
+}
+p {
+  font-size: 1.5vw;
+  margin: 1.5vw 0;
 }
 
 * {
