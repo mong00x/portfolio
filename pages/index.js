@@ -5,6 +5,14 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   return (
     <div className={styles.container}>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      ></script>
       <link
         href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Roboto&display=swap"
         rel="stylesheet"
@@ -21,8 +29,10 @@ export default function Home() {
           <button className={styles.navBtn}>Projects</button>
           <button className={styles.navBtn}>About</button>
           <button className={styles.navBtn}>Contact</button>
-          <div className={styles.cvContainer}>
-            <button className={styles.cv}>CV</button>
+          <div className={styles.themeBtnContainer}>
+            <button className={styles.themeBtn}>
+              <ion-icon name="moon-outline"></ion-icon>
+            </button>
           </div>
         </div>
       </nav>
