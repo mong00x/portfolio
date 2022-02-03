@@ -29,11 +29,12 @@ export default function Home() {
           <button className={styles.navBtn}>Projects</button>
           <button className={styles.navBtn}>About</button>
           <button className={styles.navBtn}>Contact</button>
-          <div className={styles.themeBtnContainer}>
-            <button className={styles.themeBtn}>
-              <ion-icon name="moon-outline"></ion-icon>
-            </button>
-          </div>
+        </div>
+        <div className={styles.placeHolder}></div>
+        <div className={styles.themeBtnContainer}>
+          <button className={styles.themeBtn}>
+            <ion-icon name="moon-outline"></ion-icon>
+          </button>
         </div>
       </nav>
       <main className={styles.main}>
