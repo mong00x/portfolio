@@ -1,9 +1,10 @@
 :root {
+  font-size: 100%;
   --primary-color: #fffae9;
   --dark-color: #293462;
+  --dark-hover-color: #677194;
   --accent1-color: #216583;
   --accent2-color: #f76262;
-  --colum-gap: 1.5vw;
 }
 
 ::-moz-selection {
@@ -19,6 +20,7 @@
 
 html,
 body {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   color: var(--dark-color);
@@ -45,22 +47,25 @@ button:nth-child(1):focus {
 }
 
 h1 {
-  font-size: 4.5vw;
-  margin: 1.5vw 0;
+  font-size: 4.5rem;
+  margin: 1.5rem 0;
 }
 h2 {
-  font-size: 3vw;
+  font-size: 3rem;
   margin: 1.5vw 0;
 }
 h3 {
-  font-size: 2.5vw;
+  font-size: 2.5rem;
   margin: 1.5vw 0;
 }
 p {
-  font-size: 1.5vw;
+  font-size: 1.25rem;
   margin: 1.5vw 0;
 }
 
-* {
-  box-sizing: border-box;
+hr {
+  border: 0;
+  height: 0;
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }

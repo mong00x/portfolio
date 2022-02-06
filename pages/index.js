@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <script
         type="module"
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -26,9 +26,15 @@ export default function Home() {
       <nav className={styles.nav}>
         <button className={styles.brand}>Meng Yuan</button>
         <div className={styles.navBtnGroup}>
-          <button className={styles.navBtn}>Projects</button>
-          <button className={styles.navBtn}>About</button>
-          <button className={styles.navBtn}>Contact</button>
+          <div className={styles.navBtn}>
+            <button>Projects</button>
+          </div>
+          <div className={styles.navBtn}>
+            <button>About</button>
+          </div>
+          <div className={styles.navBtn}>
+            <button>Contact</button>
+          </div>
         </div>
         <div className={styles.placeHolder}></div>
         <div className={styles.themeBtnContainer}>
@@ -37,7 +43,7 @@ export default function Home() {
           </button>
         </div>
       </nav>
-      <main className={styles.main}>
+      <main className={(styles.main, styles.container)}>
         <article className={styles.article1}>
           <div className={styles.greetings}>
             <div className={(styles.flex, styles.title)}>
@@ -50,6 +56,9 @@ export default function Home() {
               across platforms.
             </p>
           </div>
+        </article>
+        <article className={styles.article2}>
+          <h3>Check out my projects</h3>
         </article>
       </main>
     </div>
