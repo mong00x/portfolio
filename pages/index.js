@@ -43,24 +43,26 @@ export default function Home() {
           </button>
         </div>
       </nav>
-      <main className={(styles.main, styles.container)}>
-        <article className={styles.article1}>
-          <div className={styles.greetings}>
-            <div className={(styles.flex, styles.title)}>
-              <h1>Hi! I'm&nbsp;</h1>
-              <h1 className={styles.meng}>Meng 👋</h1>
+      <div className={styles.container}>
+        <main className={styles.main}>
+          <article className={styles.article1}>
+            <div className={styles.greetings}>
+              <div className={(styles.flex, styles.title)}>
+                <h1>Hi! I'm&nbsp;</h1>
+                <h1 className={styles.meng}>Meng 👋</h1>
+              </div>
+              <p className={styles.intro}>
+                I'm a frontend developer and UI/UX designer(sometimes) with a
+                passion for delivering interactive and amazing digital
+                experiences across platforms.
+              </p>
             </div>
-            <p className={styles.intro}>
-              I'm a frontend developer and UI/UX designer(sometimes) with a
-              passion for delivering interactive and amazing digital experiences
-              across platforms.
-            </p>
-          </div>
-        </article>
-        <article className={styles.article2}>
-          <h3>Check out my projects</h3>
-        </article>
-      </main>
+          </article>
+          <article className={styles.article2}>
+            <h3>Check out my projects</h3>
+          </article>
+        </main>
+      </div>
     </div>
   );
 }

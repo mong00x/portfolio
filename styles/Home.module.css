@@ -9,15 +9,14 @@
 
 .nav {
   background-color: var(--primary-color);
-  width: 100%;
-  height: 4rem;
+  height: 2rem;
   display: flex;
   padding: 1rem 4rem;
   justify-content: space-between;
 }
 
 .brand {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 900;
 }
 
@@ -26,8 +25,10 @@
 }
 
 .navBtn {
-  width: 4.5rem;
-  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 6rem;
+  font-size: 1.25rem;
 }
 
 .navBtn button {
