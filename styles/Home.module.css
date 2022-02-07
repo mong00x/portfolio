@@ -76,8 +76,35 @@
   display: inline-block;
 }
 
+@keyframes shine {
+  to {
+    background-position: 400% center;
+  }
+}
 .meng {
   color: var(--accent2-color);
+  background-clip: text;
+  background: linear-gradient(
+    90deg,
+    rgba(247, 98, 98, 1) 0%,
+    rgba(247, 108, 98, 1) 17%,
+    rgba(247, 128, 98, 1) 34%,
+    rgba(247, 148, 98, 1) 51%,
+    rgba(247, 128, 98, 1) 68%,
+    rgba(247, 108, 98, 1) 85%,
+    rgba(247, 98, 98, 1) 100%
+  );
+  background-size: 400% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 18s linear infinite;
+}
+
+.meng::selection {
+  -webkit-text-fill-color: var(--primary-color);
+}
+.meng::-moz-selection {
+  -webkit-text-fill-color: var(--primary-color);
 }
 
 .intro {

@@ -49,7 +49,8 @@ export default function Home() {
             <div className={styles.greetings}>
               <div className={(styles.flex, styles.title)}>
                 <h1>Hi! I'm&nbsp;</h1>
-                <h1 className={styles.meng}>Meng 👋</h1>
+                <h1 className={styles.meng}>Meng</h1>
+                <h1>👋</h1>
               </div>
               <p className={styles.intro}>
                 I'm a frontend developer and UI/UX designer(sometimes) with a
