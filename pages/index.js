@@ -45,11 +45,10 @@ export default function Home() {
       </nav>
       <div className={styles.container}>
         <main className={styles.main}>
-          <article className={styles.article1}>
+          <section className={styles.hero}>
             <div className={styles.greetings}>
               <div className={(styles.flex, styles.title)}>
-                <h1>Hi! I'm&nbsp;</h1>
-                <h1 className={styles.meng}>Meng</h1>
+                <h1 className={styles.meng}>Hi! I'm Meng</h1>
                 <h1>👋</h1>
               </div>
               <p className={styles.intro}>
@@ -58,10 +57,33 @@ export default function Home() {
                 experiences across platforms.
               </p>
             </div>
-          </article>
-          <article className={styles.article2}>
-            <h3>Check out my projects</h3>
-          </article>
+          </section>
+          <section className={styles.project}>
+            <h2>Projects</h2>
+            <div className={styles.grid}>
+              <div className={styles.project1}>
+                <button>
+                  <img src="/EpicTodo.png" alt="Epic To-Do" />
+                </button>
+                <h6>epic todo</h6>
+              </div>
+              <div className={styles.project2}>
+                <button>
+                  <img src="/EpicTodo.png" alt="Epic To-Do" />
+                </button>
+              </div>
+              <div className={styles.project3}>
+                <button>
+                  <img src="/EpicTodo.png" alt="Epic To-Do" />
+                </button>
+              </div>
+              <div className={styles.project4}>
+                <button>
+                  <img src="/EpicTodo.png" alt="Epic To-Do" />
+                </button>
+              </div>
+            </div>
+          </section>
         </main>
       </div>
     </div>

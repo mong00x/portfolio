@@ -1,17 +1,17 @@
 .container {
   background-color: var(--primary-color);
-  padding: 0 4rem;
+  padding: 0 16rem;
 }
 
 .flex {
-  display: fiex;
+  display: flex;
 }
 
 .nav {
   background-color: var(--primary-color);
   height: 2rem;
   display: flex;
-  padding: 1rem 4rem;
+  padding: 1rem 16rem;
   justify-content: space-between;
 }
 
@@ -42,7 +42,7 @@
   width: 2rem;
   height: 2rem;
   margin: auto 0;
-  right: 4rem;
+  right: 16rem;
   position: fixed;
   border-radius: 4px;
   align-items: center;
@@ -64,15 +64,18 @@
   top: 8.25rem;
 }
 
-.article1 {
-  margin-bottom: 9.25rem;
+.hero {
+  padding: 0 12rem;
+  margin-bottom: 10rem;
 }
 
-.greetings {
-  width: 60%;
+.hero .greetings {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.title h1 {
+.hero .title h1 {
   display: inline-block;
 }
 
@@ -81,7 +84,7 @@
     background-position: 400% center;
   }
 }
-.meng {
+.hero .meng {
   color: var(--accent2-color);
   background-clip: text;
   background: linear-gradient(
@@ -100,17 +103,54 @@
   animation: shine 18s linear infinite;
 }
 
-.meng::selection {
-  -webkit-text-fill-color: var(--primary-color);
+.hero .meng::selection {
+  -webkit-text-fill-color: var(--accent1-light-color);
 }
-.meng::-moz-selection {
-  -webkit-text-fill-color: var(--primary-color);
+.hero .meng::-moz-selection {
+  -webkit-text-fill-color: var(--accent1-light-color);
 }
 
-.intro {
+.hero .intro {
   margin: 0;
 }
 
-.article2 {
-  margin-bottom: 9.25vw;
+.project {
+  padding: 10rem 0;
+}
+
+.project .grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  justify-items: center;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+.project1 {
+  border-radius: 5px;
+
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.project2 {
+  border-radius: 5px;
+
+  grid-area: 1 / 2 / 2 / 3;
+}
+.project3 {
+  border-radius: 5px;
+
+  grid-area: 2 / 1 / 3 / 2;
+}
+.project4 {
+  border-radius: 5px;
+
+  grid-area: 2 / 2 / 3 / 3;
 }

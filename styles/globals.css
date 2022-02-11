@@ -1,9 +1,10 @@
 :root {
   font-size: 100%;
-  --primary-color: #fffae9;
+  --primary-color: #f8f8f8;
   --dark-color: #293462;
   --dark-hover-color: #677194;
   --accent1-color: #216583;
+  --accent1-light-color: #42c9ff;
   --accent2-color: #f76262;
 }
 
@@ -20,6 +21,7 @@
 
 html,
 body {
+  background-color: var(--primary-color);
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -33,12 +35,12 @@ button {
   all: unset;
   cursor: pointer;
   /* border-radius: 0.25vw; */
-  max-height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+a:focus,
 button:focus,
 button:nth-child(1):focus {
   box-shadow: 0 0 0 2px var(--primary-color), 0 0 0 4px var(--dark-color),
