@@ -22,6 +22,7 @@
 
 .navBtnGroup {
   display: flex;
+  margin-right: 8rem;
 }
 
 .navBtn {
@@ -153,4 +154,19 @@
   border-radius: 5px;
 
   grid-area: 2 / 2 / 3 / 3;
+}
+
+.skilksWrapper {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+.skilksWrapper ion-icon,
+.skilksWrapper svg {
+  font-size: 3rem;
+  margin: auto 0;
+}
+.expoIcon {
+  fill: var(--dark-color);
+  width: 3rem;
+  height: auto;
 }
