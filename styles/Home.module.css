@@ -45,7 +45,7 @@
   margin: auto 0;
   right: 16rem;
   position: fixed;
-  border-radius: 4px;
+  border-radius: var(--border-radius);
   align-items: center;
   transition: background-color 0.3s;
 }
@@ -158,14 +158,14 @@
 
 .skilksWrapper {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 1fr 7fr;
 }
 .skilksWrapper ion-icon,
 .skilksWrapper svg {
   font-size: 3rem;
   margin: auto 0;
 }
-.expoIcon {
+.skilksWrapper svg {
   fill: var(--dark-color);
   width: 3rem;
   height: auto;
