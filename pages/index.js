@@ -1,10 +1,28 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import useLocalStorage from "use-local-storage";
+import React from "react";
+
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [theme, setTheme] = useState("");
+
+  const switchTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+  };
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      let localTheme = window.localStorage.getItem("theme");
+      setTheme(localTheme);
+    }
+  }, []);
+
   return (
-    <div>
+    <div data-theme={theme}>
       <script
         type="module"
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -39,8 +57,12 @@ export default function Home() {
           </div>
           <div className={styles.placeHolder}></div>
           <div className={styles.themeBtnContainer}>
-            <button className={styles.themeBtn}>
-              <ion-icon name="moon-outline"></ion-icon>
+            <button className={styles.themeBtn} onClick={switchTheme}>
+              {theme === "light" ? (
+                <ion-icon name="moon"></ion-icon>
+              ) : (
+                <ion-icon name="sunny"></ion-icon>
+              )}
             </button>
           </div>
         </div>

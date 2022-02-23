@@ -1,6 +1,8 @@
 :root {
   font-size: 100%;
   --primary-color: #f8f8f8;
+  --primary-nav-color: #f8f8f888;
+  --primary-nav-border-color: #29346217;
   --dark-color: #293462;
   --dark-hover-color: #677194;
   --accent1-color: #216583;
@@ -12,6 +14,13 @@
     0 16px 16px rgba(0, 0, 0, 0.12);
 }
 
+[data-theme="dark"] {
+  --primary-color: #293462;
+  --primary-nav-color: #29346288;
+  --primary-nav-border-color: #f8f8f838;
+  --dark-color: #f8f8f8;
+}
+
 ::-moz-selection {
   /* Code for Firefox */
   color: var(--primary-color);
@@ -21,6 +30,10 @@
 ::selection {
   color: var(--primary-color);
   background: var(--dark-color);
+}
+
+* {
+  transition: background-color 0.3s, color 0.3s;
 }
 
 html,
@@ -42,6 +55,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--dark-color);
 }
 
 a:focus,
@@ -55,18 +69,22 @@ button:nth-child(1):focus {
 h1 {
   font-size: 4.5rem;
   margin: 1.5rem 0;
+  color: var(--dark-color);
 }
 h2 {
   font-size: 3rem;
   margin: 1.5vw 0;
+  color: var(--dark-color);
 }
 h3 {
   font-size: 2.5rem;
   margin: 1.5vw 0;
+  color: var(--dark-color);
 }
 p {
   font-size: 1.25rem;
   margin: 1.5vw 0;
+  color: var(--dark-color);
 }
 
 hr {
