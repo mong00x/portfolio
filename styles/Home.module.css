@@ -1,5 +1,4 @@
 .container {
-  background-color: var(--primary-color);
   padding: 0 16rem;
 }
 
@@ -8,11 +7,23 @@
 }
 
 .nav {
-  background-color: var(--primary-color);
-  height: 2rem;
+  background-color: #f8f8f800;
+  -webkit-backdrop-filter: blur(16px);
+  backdrop-filter: blur(16px);
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 99;
+  border-bottom: solid 1px #29346217;
+}
+
+.navBtnContainer {
+  position: relative;
   display: flex;
-  padding: 1rem 16rem;
+  margin: 1rem 16rem;
   justify-content: space-between;
+  width: auto;
+  height: 2rem;
 }
 
 .brand {
@@ -60,24 +71,24 @@
   height: 100%;
 }
 
-.main {
-  padding-top: 8rem;
-  top: 8.25rem;
-}
-
 .hero {
-  padding: 0 12rem;
-  margin-bottom: 10rem;
+  padding: 8rem 0 4rem 0;
+  background-color: var(--accent1-light-color);
 }
 
 .hero .greetings {
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 
 .hero .title h1 {
   display: inline-block;
+}
+
+.hero .intro {
+  width: 64%;
+  color: var(--primary-color);
+  font-size: 1.5rem;
 }
 
 @keyframes shine {
@@ -116,7 +127,7 @@
 }
 
 .project {
-  padding: 10rem 0;
+  padding: 2rem 0;
 }
 
 .project .grid {
@@ -169,4 +180,10 @@
   fill: var(--dark-color);
   width: 3rem;
   height: auto;
+}
+
+.svg {
+  position: absolute;
+  z-index: -1;
+  fill: var(--accent1-light-color);
 }
