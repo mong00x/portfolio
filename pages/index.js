@@ -9,17 +9,22 @@ import { useState, useEffect } from "react";
 export default function Home() {
   const [theme, setTheme] = useState("");
 
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      let defaultTheme = window.matchMedia("(prefers-color-scheme: dark)")
+        .matches
+        ? "dark"
+        : "light";
+
+      console.log(defaultTheme);
+      setTheme(defaultTheme);
+    }
+  }, []);
+
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
   };
-
-  useEffect(() => {
-    if (typeof window !== "undefined") {
-      let localTheme = window.localStorage.getItem("theme");
-      setTheme(localTheme);
-    }
-  }, []);
 
   return (
     <div data-theme={theme}>
