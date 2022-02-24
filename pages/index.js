@@ -60,7 +60,6 @@ export default function Home() {
               <button>Contact</button>
             </div>
           </div>
-          <div className={styles.placeHolder}></div>
           <div className={styles.themeBtnContainer}>
             <button className={styles.themeBtn} onClick={switchTheme}>
               {theme === "light" ? (
