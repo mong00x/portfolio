@@ -4,7 +4,7 @@
   --primary-nav-color: #f8f8f888;
   --primary-nav-border-color: #29346217;
   --dark-color: #293462;
-  --dark-hover-color: #677194;
+  --dark-hover-color: #c5c5c5;
   --accent1-color: #216583;
   --accent1-light-color: #42c9ff;
   --accent2-color: #f76262;
@@ -19,6 +19,7 @@
   --primary-nav-color: #29346288;
   --primary-nav-border-color: #f8f8f838;
   --dark-color: #f8f8f8;
+  --dark-hover-color: #677194;
 }
 
 ::-moz-selection {
