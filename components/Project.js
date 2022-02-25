@@ -20,10 +20,20 @@ const cardVariants = {
   },
 };
 
-const stringToHTML = (str) => {
-  var parser = new DOMParser();
-  var doc = parser.parseFromString(str, "text/html");
-  return doc.body;
+const textVariants = {
+  offscreen: {
+    opacity: 0,
+    y: 30,
+  },
+  onscreen: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: "spring",
+      bounce: 0.5,
+      duration: 1.2,
+    },
+  },
 };
 
 const Project = (project) => {
@@ -38,10 +48,10 @@ const Project = (project) => {
       <motion.button variants={cardVariants}>
         <img src={project.project.cover} alt={project.project.name} />
       </motion.button>
-      <p>{project.project.description}</p>
-      <div className={styles.stacksksWrapper}>
+      <motion.p variants={textVariants}>{project.project.description}</motion.p>
+      <div className={styles.stacksWrapper}>
         {project.project.stacks.map((stack) => (
-          <div className={styles.stack} key={stack.name}>
+          <motion.div variants={textVariants}>
             {stack.icontype === "ionic" ? (
               <ion-icon name={stack.icon}></ion-icon>
             ) : stack.icontype === "RN" ? (
@@ -69,7 +79,7 @@ const Project = (project) => {
               </svg>
             )}
             <p>{stack.name}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </motion.div>

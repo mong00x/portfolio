@@ -139,9 +139,9 @@
 .grid {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 20px;
+  grid-column-gap: 6rem;
   grid-row-gap: 20px;
   justify-items: center;
 }
@@ -149,40 +149,27 @@
 .project img {
   width: 100%;
   height: auto;
-}
-
-.project1 {
-  border-radius: var(--border-radius);
-}
-
-.project2 {
-  border-radius: 5px;
-}
-.project3 {
-  border-radius: 5px;
-}
-.project4 {
   border-radius: 5px;
 }
 
-.stacksksWrapper {
-  display: grid;
-  grid-template-columns: 1fr 7fr;
+.stacksWrapper {
+  display: flex;
+  justify-content: space-between;
 }
-.stacksksWrapper ion-icon,
-.stacksksWrapper svg {
+
+.stacksWrapper ion-icon,
+.stacksWrapper svg {
   fill: var(--dark-color);
-
   font-size: 3rem;
   margin: auto 0;
 }
-.stacksksWrapper svg {
+.stacksWrapper svg {
   width: 3rem;
   height: auto;
 }
 
-.svg {
-  position: absolute;
-  z-index: -1;
-  fill: var(--dark-color);
+.stacksWrapper div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
