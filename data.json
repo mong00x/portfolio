@@ -1,0 +1,116 @@
+{
+    "projects": [
+        {
+            "id": "1",
+            "name": "Epic To-Do",
+            "cover":"./EBPage.png",
+            "description": "A To-Do list web app made with React and advertised by a fully responsive landing page.",
+            "demo": "https://epicbyte-cdu.bitbucket.io/project/pages/",
+            "repo": "https://bitbucket.org/epicbyte-cdu/epicbyte-cdu.bitbucket.io/src/master/project/",
+            "start_date": "",
+            "end_date": "",
+            "status": "",
+            "stacks": [
+                {
+                    "name": "HTML5",
+                    "icontype":"ionic",
+                    "icon": "logo-html5"
+                },
+                {
+                    "name": "CSS3",
+                    "icontype":"ionic",
+                    "icon": "logo-css3"
+                },
+                {
+                    "name": "JavaScript",
+                    "icontype":"ionic",
+                    "icon": "logo-javascript"
+                },
+                {
+                    "name": "React",
+                    "icontype":"ionic",
+                    "icon": "logo-react"
+                },
+                {   
+                    "name":"BitBucket",
+                    "icontype":"ionic",
+                    "icon": "logo-bitbucket"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Food Keeper",
+            "cover":"./FoodKeeper.png",
+            "description": "A cross-platform mobile application developed for youth groups to manage ingredients.",
+            "demo": "https://expo.dev/@mong00x/food-keeper",
+            "repo": "https://github.com/mong00x/recipeheroRN",
+            "start_date": "",
+            "end_date": "",
+            "status": "",
+            "stacks": [
+                {
+                    "name": "React Native",
+                    "icontype":"RN",
+                    "icon": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJpb25pY29uIHMtaW9uLWljb24iIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiA+IDx0aXRsZT5Mb2dvIFJlYWN0IE5hdGl2ZTwvdGl0bGU+IDxwYXRoIGQ9Ik0yNTYgMjk4LjU1YTQzIDQzIDAgMTAtNDIuODYtNDMgNDIuOTEgNDIuOTEgMCAwMDQyLjg2IDQzeiI+PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGNsYXNzPSJpb25pY29uIHMtaW9uLWljb24iIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiA+IDx0aXRsZT5Mb2dvIFJlYWN0IE5hdGl2ZTwvdGl0bGU+IDxwYXRoIGQ9Ik0yNTYgMjk4LjU1YTQzIDQzIDAgMTAtNDIuODYtNDMgNDIuOTEgNDIuOTEgMCAwMDQyLjg2IDQzeiI+PC9wYXRoPiA8L3N2Zz4="
+                },
+                {
+                    "name": "Firebase",
+                    "icontype":"ionic",    
+                    "icon": "logo-firebase"
+                },
+                {
+                    "name": "Expo",
+                    "icontype":"EX",
+                    "icon": "PHN2ZyBjbGFzc05hbWU9e3N0eWxlcy5leHBvSWNvbn12ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI1NiAyMzEiID4gPHRpdGxlPkxvZ28gRXhwbzwvdGl0bGU+IDxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0iTTEyMS4zMDkwMDQsODQuNjczMjU4NSBDMTIzLjQwMjUwNCw4MS41ODc0MTUyIDEyNS42OTQyOTIsODEuMTk1MDE3MSAxMjcuNTUzNDUxLDgxLjE5NTAxNzEgQzEyOS40MTI2MSw4MS4xOTUwMTcxIDEzMi41MDk4NDMsODEuNTg3NDE1MiAxMzQuNjA0MTYyLDg0LjY3MzI1ODUgQzE1MS4xMDYzNDgsMTA3LjMzOTU5MyAxNzguMzQ1NjA3LDE1Mi40OTIgMTk4LjQzOTEwOCwxODUuNzk4NzIxIEMyMTEuNTQyNTMyLDIwNy41MTk0OTkgMjIxLjYwNjksMjI0LjIwMTk0NyAyMjMuNjcxNzIxLDIyNi4zMjQ5NDQgQzIzMS40MjI5OTYsMjM0LjI5NDk5MiAyNDIuMDUzNTUxLDIyOS4zMjc5NDkgMjQ4LjIzMDgwOSwyMjAuMjg3Nzk5IEMyNTQuMzEyMjAxLDIxMS4zODc3NjIgMjU2LjAwMDExMSwyMDUuMTM4Mzk5IDI1Ni4wMDAxMTEsMTk4LjQ3MTE1NSBDMjU2LjAwMDExMSwxOTMuOTMwMTg2IDE2Ny44OTUzMTUsMzAuMDcxNDI0NCAxNTkuMDIyMzE3LDE2LjQzMjIxMTcgQzE1MC40ODkzNiwzLjMxMzU5NjM5IDE0Ny43MTAwNDQsMCAxMzMuMTA1NTI3LDAgTDEyMi4xNzY3MjEsMCBDMTA3LjYxNTYzMSwwIDEwNS41MTE0NzksMy4zMTM1OTYzOSA5Ni45Nzc3MDIyLDE2LjQzMjIxMTcgQzg4LjEwNTUyMzgsMzAuMDcxNDI0NCAwLjAwMDExMDUxNTIsMTkzLjkzMDE4NiAwLjAwMDExMDUxNTIsMTk4LjQ3MTE1NSBDMC4wMDAxMTA1MTUyLDIwNS4xMzgzOTkgMS42ODgzOTIyNywyMTEuMzg3NzYyIDcuNzY5OTE0OTUsMjIwLjI4Nzc5OSBDMTMuOTQ3MTI0MSwyMjkuMzI3OTQ5IDI0LjU3NzU5NjUsMjM0LjI5NDk5MiAzMi4zMjg2MjU5LDIyNi4zMjQ5NDQgQzM0LjM5MzY5MzQsMjI0LjIwMTk0NyA0NC40NTgwNjA1LDIwNy41MTk0OTkgNTcuNTYxNjQ4NSwxODUuNzk4NzIxIEM3Ny42NTQ4MjIsMTUyLjQ5MiAxMDQuODA2ODE4LDEwNy4zMzk1OTMgMTIxLjMwOTAwNCw4NC42NzMyNTg1IFoiLz4gPC9zdmc+"
+                },
+                {
+                    "name": "M3O API Service",
+                    "icontype":"ionic",
+                    "icon": "happy"
+                }
+                
+            ]
+        },
+        {
+            "id": "3",
+            "name": "Epic To-Do",
+            "cover":"./EBPage.png",
+            "description": "A To-Do list web app made with React and advertised by a fully responsive landing page.",
+            "demo": "https://epicbyte-cdu.bitbucket.io/project/pages/",
+            "repo": "https://bitbucket.org/epicbyte-cdu/epicbyte-cdu.bitbucket.io/src/master/project/",
+            "start_date": "",
+            "end_date": "",
+            "status": "",
+            "stacks": [
+                {
+                    "name": "HTML5",
+                    "icontype":"ionic",
+                    "icon": "logo-html5"
+                },
+                {
+                    "name": "CSS3",
+                    "icontype":"ionic",
+                    "icon": "logo-css3"
+                },
+                {
+                    "name": "JavaScript",
+                    "icontype":"ionic",
+                    "icon": "logo-javascript"
+                },
+                {
+                    "name": "React",
+                    "icontype":"ionic",
+                    "icon": "logo-react"
+                },
+                {   
+                    "name":"BitBucket",
+                    "icontype":"ionic",
+                    "icon": "logo-bitbucket"
+                }
+            ]
+        }
+    ]
+
+    
+}
