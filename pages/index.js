@@ -55,27 +55,33 @@ export default function Home() {
         <div className={styles.navBtnContainer}>
           <button
             className={styles.brand}
-            onClick={() => (window.location.href = "/")}
+            onClick={() => (window.location.href = "#")}
           >
             Meng Yuan
           </button>
           <div className={styles.navBtnGroup}>
             <div className={styles.navBtn}>
-              <button>Projects</button>
+              <button onClick={() => (window.location.href = "#projects")}>
+                Projects
+              </button>
             </div>
             <div className={styles.navBtn}>
-              <button>About</button>
+              <button onClick={() => (window.location.href = "#about")}>
+                About
+              </button>
             </div>
             <div className={styles.navBtn}>
-              <button>Contact</button>
+              <button onClick={() => (window.location.href = "#contact")}>
+                Contact
+              </button>
             </div>
           </div>
           <div className={styles.themeBtnContainer}>
             <button className={styles.themeBtn} onClick={switchTheme}>
               {theme === "light" ? (
-                <ion-icon name="sunny"></ion-icon>
+                <ion-icon name="sunny-outline"></ion-icon>
               ) : (
-                <ion-icon name="moon"></ion-icon>
+                <ion-icon name="moon-outline"></ion-icon>
               )}
             </button>
           </div>
@@ -109,7 +115,7 @@ export default function Home() {
           ></path>
         </svg>
         <div className={styles.container}>
-          <section className={styles.Projects}>
+          <section id="projects" className={styles.Projects}>
             <h2>Projects</h2>
             <div className={styles.grid}>
               {Data.projects.map((project) => (
