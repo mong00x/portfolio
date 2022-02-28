@@ -2,12 +2,13 @@
   font-size: 100%;
   --primary-color: #f8f8f8;
   --primary-nav-color: #f8f8f888;
-  --primary-nav-border-color: #29346217;
-  --dark-color: #293462;
+  --primary-nav-border-color: #bdc6f7;
+  --dark-color: #282a36;
   --dark-hover-color: #c5c5c5;
-  --accent1-color: #216583;
-  --accent1-light-color: #42c9ff;
-  --accent2-color: #f76262;
+  --accent1-color: #5c6bc0;
+  --accent1-light-color: #8b9cff;
+  --accent2-color: #f2c029;
+  --selection-color: #a0a0a075;
   --border-radius: 4px;
   --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
     0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
@@ -15,22 +16,25 @@
 }
 
 [data-theme="dark"] {
-  --primary-color: #293462;
-  --primary-nav-color: #29346288;
-  --primary-nav-border-color: #f8f8f838;
+  --primary-color: #282a36;
+  --primary-nav-color: #25273188;
+  --primary-nav-border-color: #5c6bc0;
   --dark-color: #f8f8f8;
   --dark-hover-color: #677194;
+  --selection-color: #e7e7e73d;
 }
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: var(--primary-color);
-  background: var(--dark-color);
+  /* color: var(--primary-color); */
+  background: var(--selection-color);
+  border-radius: 12px;
 }
 
 ::selection {
-  color: var(--primary-color);
-  background: var(--dark-color);
+  /* color: var(--primary-color); */
+  background: var(--selection-color);
+  border-radius: 12px;
 }
 
 * {
