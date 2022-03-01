@@ -13,6 +13,8 @@
   --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
     0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
     0 16px 16px rgba(0, 0, 0, 0.12);
+  font-family: "PT Sans", sans-serif, -apple-system, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 [data-theme="dark"] {
@@ -49,8 +51,6 @@ body {
   margin: 0;
   color: var(--dark-color);
   min-height: 100vh;
-  font-family: "PT Sans", sans-serif, -apple-system, Roboto, Oxygen, Ubuntu,
-    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 button {
   all: none;
@@ -72,11 +72,15 @@ button:nth-child(1):focus {
 }
 
 h1 {
+  font-family: "Montserrat", sans-serif, -apple-system, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 4.5rem;
   margin: 1.5rem 0;
   color: var(--dark-color);
 }
 h2 {
+  font-family: "Montserrat", sans-serif, -apple-system, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 3rem;
   margin: 1.5vw 0;
   color: var(--dark-color);
@@ -87,6 +91,8 @@ h3 {
   color: var(--dark-color);
 }
 p {
+  font-family: "PT Sans", sans-serif, -apple-system, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1.25rem;
   margin: 1.5vw 0;
   color: var(--dark-color);

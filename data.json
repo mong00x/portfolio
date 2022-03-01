@@ -3,7 +3,7 @@
         {
             "id": "1",
             "name": "Epic To-Do",
-            "cover":"./EBPage.png",
+            "cover":"./EpicTodo.png",
             "description": "A To-Do list web app made with React and advertised by a fully responsive landing page.",
             "demo": "https://epicbyte-cdu.bitbucket.io/project/pages/",
             "repo": "https://bitbucket.org/epicbyte-cdu/epicbyte-cdu.bitbucket.io/src/master/project/",

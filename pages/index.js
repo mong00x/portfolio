@@ -43,7 +43,7 @@ export default function Home() {
       ></script>
       <style>
         @import
-        url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Roboto&display=swap');
+        url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Sans:wght@400;700&family=Roboto&display=swap');
       </style>
 
       <Head>
@@ -104,7 +104,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <svg
+
+        {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1440 320"
           className={styles.svg}
@@ -113,17 +114,36 @@ export default function Home() {
             fill-opacity="1"
             d="M0,224L80,218.7C160,213,320,203,480,176C640,149,800,107,960,90.7C1120,75,1280,85,1360,90.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
           ></path>
-        </svg>
-        <div className={styles.container}>
-          <section id="projects" className={styles.Projects}>
-            <h2>Projects</h2>
-            <div className={styles.grid}>
-              {Data.projects.map((project) => (
-                <Project key={project.id} project={project} />
-              ))}
+        </svg> */}
+        <section id="projects" className={(styles.projects, styles.container)}>
+          <h2>Projects</h2>
+          <div className={styles.grid}>
+            {Data.projects.map((project) => (
+              <Project key={project.id} project={project} />
+            ))}
+          </div>
+        </section>
+
+        <section id="about" className={styles.container}>
+          <h2>About</h2>
+          <div className={styles.about}>
+            <div className={styles.aboutImg}>
+              {/* <Image src="" alt="Meng Yuan" /> */}
             </div>
-          </section>
-        </div>
+            <div className={styles.aboutText}>
+              <p>
+                I'm a frontend developer and UI/UX designer(sometimes) with a
+                passion for delivering interactive and amazing digital
+                experiences across platforms.
+              </p>
+              <p>
+                I'm currently working as a frontend developer at{" "}
+                <a href="https://www.mengyuan.com">Meng Yuan</a> and I'm
+                currently working on{" "}
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
