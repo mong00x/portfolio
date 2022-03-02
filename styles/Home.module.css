@@ -54,9 +54,6 @@
   width: 2rem;
   height: 2rem;
   margin: auto 0;
-  /* right: 16rem; */
-  /* position: fixed; */
-  /* box-shadow: inset 0 0 0 1px var(--primary-nav-border-color; */
   border-radius: var(--border-radius);
   align-items: center;
   transition: background-color 0.3s !important;
@@ -136,30 +133,76 @@
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 6rem;
-  grid-row-gap: 20px;
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
   justify-items: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  border-radius: calc(var(--border-radius) * 2);
+  background: var(--project-color);
+  box-shadow: var(--box-shadow);
 }
 
 .project img {
   width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: calc(var(--border-radius) * 2) calc(var(--border-radius) * 2) 0
+    0;
+}
+
+.project .contextcontainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1.125rem;
+}
+
+.contextheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contextbthgroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contextbtngroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2rem;
+  width: 14%;
+}
+.contextbtngroup button {
+  color: var(--accent1-color);
+}
+
+.projectfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projectyear {
+  margin: 0 !important;
 }
 
 .stacksWrapper {
   display: flex;
-  justify-content: space-between;
 }
 
 .stacksWrapper ion-icon,
 .stacksWrapper svg {
-  fill: var(--dark-color);
-  font-size: 3rem;
+  fill: var(--dark-light-color);
+  font-size: 1.5rem;
   margin: auto 0;
 }
 .stacksWrapper svg {
-  width: 3rem;
+  width: 1.5rem;
   height: auto;
 }
 

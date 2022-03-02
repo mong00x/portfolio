@@ -1,18 +1,19 @@
 :root {
   font-size: 100%;
   --primary-color: #f8f8f8;
-  --primary-nav-color: #f8f8f888;
   --primary-nav-border-color: #bdc6f7;
   --dark-color: #282a36;
+  --dark-light-color: #898c9c99;
   --dark-hover-color: #c5c5c5;
   --accent1-color: #5c6bc0;
   --accent1-light-color: #8b9cff;
   --accent2-color: #f2c029;
   --selection-color: #a0a0a075;
+  --project-color: #ffffff;
   --border-radius: 4px;
-  --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
-    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
-    0 16px 16px rgba(0, 0, 0, 0.12);
+  --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11);
+
   font-family: "PT Sans", sans-serif, -apple-system, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -24,6 +25,8 @@
   --dark-color: #f8f8f8;
   --dark-hover-color: #677194;
   --selection-color: #e7e7e73d;
+  --project-color: #ffffff11;
+  --box-shadow: none;
 }
 
 ::-moz-selection {
@@ -82,20 +85,23 @@ h2 {
   font-family: "Montserrat", sans-serif, -apple-system, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 3rem;
-  margin: 1.5vw 0;
+  margin: 1.5rem 0;
   color: var(--dark-color);
 }
 h3 {
-  font-size: 2.5rem;
-  margin: 1.5vw 0;
+  font-family: "Montserrat", sans-serif, -apple-system, Roboto, Oxygen, Ubuntu,
+    Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 1.5rem;
+  margin: 0;
   color: var(--dark-color);
 }
 p {
   font-family: "PT Sans", sans-serif, -apple-system, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1.25rem;
-  margin: 1.5vw 0;
+  margin: 1.5rem 0;
   color: var(--dark-color);
+  letter-spacing: 0.4px;
 }
 
 hr {
@@ -106,6 +112,4 @@ hr {
 }
 
 img {
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
 }
