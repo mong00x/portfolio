@@ -21,10 +21,10 @@ const cardVariants = {
 };
 
 const repoRedirect = (repo) => {
-  window.location.href = repo;
+  window.open(repo, "").focus();
 };
 const demoRedirect = (demo) => {
-  window.location.href = demo;
+  window.open(demo, "").focus();
 };
 
 const Project = (project) => {
@@ -59,7 +59,7 @@ const Project = (project) => {
               </button>
             </div>
           </div>
-          <p>{project.project.description}</p>
+          <p className={styles.contextbody}>{project.project.description}</p>
         </div>
         <div className={styles.projectfooter}>
           <p
