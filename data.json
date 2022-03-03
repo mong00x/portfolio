@@ -72,16 +72,16 @@
         },
         {
             "id": "3",
-            "name": "Epic To-Do",
-            "cover":"./EBPage.png",
-            "description": "A To-Do list web app made with React and advertised by a fully responsive landing page.",
-            "demo": "https://epicbyte-cdu.bitbucket.io/project/pages/",
-            "repo": "https://bitbucket.org/epicbyte-cdu/epicbyte-cdu.bitbucket.io/src/master/project/",
+            "name": "Invoicing System redesign",
+            "cover":"./InvSystem.png",
+            "description": "Redesign of the invoicing system, a web application driven by ASP.Net Core MVC, enabling CYCM (Youth and Community Music Centre) staff to record lessons and send invoices to students. The new design ensures that the system is functional and responsive across platforms.",
+            "demo": "https://hit339.azurewebsites.net/",
+            "repo": "https://github.com/kanishchhabra/dotnetproject",
             "year": "2021",
             "status": "",
             "stacks": [
                 {
-                    "name": "HTML5",
+                    "name": "ASP.Net Core",
                     "icontype":"ionic",
                     "icon": "logo-html5"
                 },

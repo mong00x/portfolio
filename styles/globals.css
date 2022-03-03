@@ -3,16 +3,17 @@
   --primary-color: #f8f8f8;
   --primary-nav-border-color: #bdc6f7;
   --dark-color: #282a36;
+  --text-color: #5d617c;
   --dark-light-color: #898c9c99;
   --dark-hover-color: #c5c5c5;
-  --accent1-color: #5c6bc0;
-  --accent1-light-color: #8b9cff;
+  --accent1-color: #8395ff;
+  /* --accent1-light-color: #8b9cff; */
   --accent2-color: #f2c029;
   --selection-color: #a0a0a075;
   --project-color: #ffffff;
   --border-radius: 4px;
-  --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
-    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11);
+  /* --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11); */
 
   font-family: "PT Sans", sans-serif, -apple-system, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -23,6 +24,8 @@
   --primary-nav-color: #25273188;
   --primary-nav-border-color: #5c6bc0;
   --dark-color: #f8f8f8;
+  --text-color: #b8b8b8;
+
   --dark-hover-color: #677194;
   --selection-color: #e7e7e73d;
   --project-color: #ffffff11;
@@ -100,7 +103,7 @@ p {
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 1.25rem;
   margin: 1.5rem 0;
-  color: var(--dark-color);
+  color: var(--text-color);
   letter-spacing: 0.4px;
 }
 
