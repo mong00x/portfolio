@@ -72,8 +72,7 @@ button {
 a:focus,
 button:focus,
 button:nth-child(1):focus {
-  box-shadow: 0 0 0 2px var(--primary-color), 0 0 0 4px var(--dark-color),
-    inset 0 0 0 1px var(--primary-color);
+  box-shadow: 0 0 0 2px var(--dark-color);
   background-color: #00000010;
 }
 
