@@ -47,7 +47,7 @@ export default function Home() {
 
       <Head>
         <title>Mong00x</title>
-        <meta name="description" content="Welcome to my portfolio!" />
+        <meta name="description" content="Mong00x.me" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <nav className={styles.nav}>
