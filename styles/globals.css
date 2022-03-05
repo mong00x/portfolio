@@ -97,6 +97,7 @@ h3 {
   margin: 0;
   color: var(--dark-color);
 }
+
 p {
   font-family: "PT Sans", sans-serif, -apple-system, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -106,12 +107,29 @@ p {
   letter-spacing: 0.4px;
 }
 
-hr {
-  border: 0;
-  height: 0;
-  border-top: 2px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+@media (max-width: 60em) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 }
 
-img {
+/* option for disable motion */
+@media screen and (prefers-reduced-motion: reduce) {
+  * {
+    /* Very short durations means JavaScript that relies on events still works */
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }
