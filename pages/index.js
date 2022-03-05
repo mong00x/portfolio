@@ -106,22 +106,14 @@ export default function Home() {
           </div>
         </section>
 
-        {/* <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 320"
-          className={styles.svg}
-        >
-          <path
-            fill-opacity="1"
-            d="M0,224L80,218.7C160,213,320,203,480,176C640,149,800,107,960,90.7C1120,75,1280,85,1360,90.7L1440,96L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"
-          ></path>
-        </svg> */}
-        <section id="projects" className={(styles.projects, styles.container)}>
-          <h2>Projects</h2>
-          <div className={styles.grid}>
-            {Data.projects.map((project) => (
-              <Project key={project.id} project={project} />
-            ))}
+        <section id="projects" className={styles.projects}>
+          <div className={styles.container}>
+            <h2>Projects</h2>
+            <div className={styles.grid}>
+              {Data.projects.map((project) => (
+                <Project key={project.id} project={project} />
+              ))}
+            </div>
           </div>
         </section>
 

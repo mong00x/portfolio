@@ -168,12 +168,16 @@
   }
 
   .hero {
-    padding: 4rem 0 2rem 0;
+    padding-top: 4rem;
   }
 
   .intro {
     font-size: 1.25rem !important;
     width: 80% !important;
+  }
+
+  .projects {
+    padding-bottom: 4rem;
   }
 
   .grid {
@@ -211,6 +215,10 @@
 
   .emoji {
     align-self: end;
+  }
+
+  .projects {
+    padding-bottom: 4rem;
   }
 
   .grid {
