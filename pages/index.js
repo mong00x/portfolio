@@ -92,8 +92,10 @@ export default function Home() {
           <div className={styles.container}>
             <div className={styles.greetings}>
               <div className={(styles.flex, styles.title)}>
-                <h1 className={styles.meng}>Hi! I'm Meng</h1>
-                <h1>👋</h1>
+                <h1 className={styles.meng}>
+                  Hi! <div className={styles.linebreaker}></div>I'm Meng
+                </h1>
+                <h1 className={styles.emoji}>👋</h1>
               </div>
               <p className={styles.intro}>
                 I'm an aspiring frontend developer and UI/UX designer(sometimes)
@@ -123,11 +125,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className={styles.container}>
+        {/* <section id="about" className={styles.container}>
           <h2>About</h2>
           <div className={styles.about}>
             <div className={styles.aboutImg}>
-              {/* <Image src="" alt="Meng Yuan" /> */}
             </div>
             <div className={styles.aboutText}>
               <p>
@@ -142,7 +143,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
     </div>
   );

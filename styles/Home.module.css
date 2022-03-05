@@ -84,8 +84,13 @@
   flex-direction: column;
 }
 
-.hero .title h1 {
-  display: inline-block;
+.title {
+  display: flex;
+  flex-direction: row;
+}
+
+.linebreaker {
+  display: none;
 }
 
 .hero .intro {
@@ -162,6 +167,15 @@
     margin: 1rem;
   }
 
+  .hero {
+    padding: 4rem 0 2rem 0;
+  }
+
+  .intro {
+    font-size: 1.25rem !important;
+    width: 80% !important;
+  }
+
   .grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -185,15 +199,18 @@
     padding-top: 4rem;
   }
 
-  .hero .title h1 {
-    display: inline-block;
-    font-size: 3.5rem;
-  }
-
   .hero .intro {
     width: auto;
     color: var(--dark-color);
     font-size: 1.25rem;
+  }
+
+  .linebreaker {
+    display: block;
+  }
+
+  .emoji {
+    align-self: end;
   }
 
   .grid {

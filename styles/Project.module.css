@@ -106,11 +106,8 @@
 }
 
 @media (pointer: coarse) {
-  .project {
-    transition: none;
-  }
   .project:hover,
   .project:focus-within {
-    margin: auto;
+    margin: unset;
   }
 }
