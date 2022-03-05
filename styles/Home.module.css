@@ -134,6 +134,10 @@
   margin: 0;
 }
 
+.projects {
+  padding-bottom: 4rem;
+}
+
 .grid {
   display: grid;
   width: 100%;
@@ -176,10 +180,6 @@
     width: 80% !important;
   }
 
-  .projects {
-    padding-bottom: 4rem;
-  }
-
   .grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -215,10 +215,6 @@
 
   .emoji {
     align-self: end;
-  }
-
-  .projects {
-    padding-bottom: 4rem;
   }
 
   .grid {
