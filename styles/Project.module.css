@@ -5,13 +5,10 @@
   background: var(--project-color);
   box-shadow: var(--box-shadow);
   transition: all 0.2s;
+  overflow: hidden;
 }
 
-.project:hover,
-.project:focus-within {
-  margin: -0.3rem 0 0.3rem 0;
-  /* box-shadow: var(--box-shadow-hover); */
-}
+
 
 .project img {
   width: 100%;
@@ -19,6 +16,12 @@
   height: auto;
   border-radius: calc(var(--border-radius) * 2) calc(var(--border-radius) * 2) 0
     0;
+  transition: all 0.2s ease;
+
+}
+
+.project img:hover {
+  transform: scale(1.02);
 }
 
 .project .contextcontainer {
@@ -47,13 +50,13 @@
   max-height: 2rem;
 }
 
-.contextbtngroup .break {
+/* .contextbtngroup .break {
   border-right: 2px solid var(--accent1-color);
   margin: 0.6rem 0.25rem;
-}
+} */
 
 .contextbtngroup button {
-  margin: auto 0.25em;
+  /* margin: auto 0.25em; */
   width: 2rem;
   height: 2rem;
   color: var(--accent1-color);

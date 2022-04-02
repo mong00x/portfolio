@@ -27,7 +27,6 @@ const demoRedirect = (demo) => {
 };
 
 const Project = (project) => {
-  console.log(project);
   return (
     <motion.div
       className={styles.project}
@@ -36,11 +35,14 @@ const Project = (project) => {
       viewport={{ once: true, amount: 0.3 }}
       variants={cardVariants}
     >
-      <img
-        className={styles.projectcover}
-        src={project.project.cover}
-        alt={project.project.name}
-      />
+      <button onClick={() => demoRedirect(project.project.demo)}>
+        <img
+          className={styles.projectcover}
+          src={project.project.cover}
+          alt={project.project.name}
+        />
+      </button>
+
       <div className={styles.contextcontainer}>
         <div className={styles.context}>
           <div className={styles.contextheader}>
@@ -52,10 +54,6 @@ const Project = (project) => {
                 ) : (
                   <ion-icon name="logo-github"></ion-icon>
                 )}
-              </button>
-              <div className={styles.break}></div>
-              <button onClick={() => demoRedirect(project.project.demo)}>
-                <ion-icon name="open-outline"></ion-icon>
               </button>
             </div>
           </div>
