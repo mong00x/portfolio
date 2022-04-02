@@ -162,11 +162,11 @@
 /* medium */
 @media (max-width: 100em) and (min-width: 40em) {
   .container {
-    padding: 0 1rem;
+    padding: 0 2rem;
   }
 
   .navBtnContainer {
-    margin: 1rem;
+    margin: 2rem;
   }
 
   .hero {
@@ -184,7 +184,7 @@
 }
 
 /* small */
-@media (max-width: 40em) {
+@media (max-width: 60em) {
   .container {
     padding: 0 1rem;
   }
