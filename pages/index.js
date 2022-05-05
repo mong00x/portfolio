@@ -51,29 +51,13 @@ export default function Home() {
       </Head>
       <nav className={styles.nav}>
         <div className={styles.navBtnContainer}>
-          <button
+          {/* <button
             className={styles.brand}
             onClick={() => (window.location.href = "#")}
           >
             Meng Yuan
-          </button>
-          <div className={styles.navBtnGroup}>
-            <div className={styles.navBtn}>
-              <button onClick={() => (window.location.href = "#projects")}>
-                Projects
-              </button>
-            </div>
-            <div className={styles.navBtn}>
-              <button onClick={() => (window.location.href = "#about")}>
-                About
-              </button>
-            </div>
-            <div className={styles.navBtn}>
-              <button onClick={() => (window.location.href = "#contact")}>
-                Contact
-              </button>
-            </div>
-          </div>
+          </button> */}
+          <div className={styles.navBtnGroup}></div>
           <div className={styles.themeBtnContainer}>
             <button className={styles.themeBtn} onClick={switchTheme}>
               {theme === "light" ? (
