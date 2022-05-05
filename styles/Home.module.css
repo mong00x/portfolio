@@ -8,22 +8,24 @@
 
 .nav {
   background-color: var(--primary-nav-color);
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(16px);
+  /* -webkit-backdrop-filter: blur(16px); */
+  /* backdrop-filter: blur(16px); */
   position: fixed;
-  width: 100%;
+  height: 100%;
+  width: auto;
   top: 0;
+  right: 0;
   z-index: 99;
-  /* border-bottom: solid 4px var(--primary-nav-border-color); */
 }
 
 .navBtnContainer {
-  position: relative;
   display: flex;
-  margin: 1rem 16rem;
+  flex-direction: column;
+  align-items: center;
+  padding:2rem 0;
+  margin:auto;
   justify-content: space-between;
   width: auto;
-  height: 2rem;
 }
 
 .brand {
@@ -49,7 +51,7 @@
 }
 
 .themeBtnContainer {
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   font-size: 1.7rem;
   width: 2rem;
   height: 2rem;
@@ -104,7 +106,8 @@
     background-position: 400% center;
   }
 } */
-.hero .meng {
+
+/* .hero .meng {
   color: var(--accent2-color);
   background-clip: text;
   background: linear-gradient(
@@ -118,7 +121,7 @@
   background-size: 100% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* animation: shine 18s linear infinite; */
+  animation: shine 18s linear infinite;
 }
 
 .hero .meng::selection {
@@ -126,7 +129,7 @@
 }
 .hero .meng::-moz-selection {
   -webkit-text-fill-color: var(--accent1-light-color);
-}
+} */
 
 .hero .intro {
   margin: 0;

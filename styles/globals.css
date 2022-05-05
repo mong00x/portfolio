@@ -1,7 +1,7 @@
 :root {
   font-size: 100%;
   --primary-color: #f8f8f8;
-  --primary-nav-border-color: #bdc6f7;
+  --primary-nav-color: rgba(92, 107, 192, 0.2);
   --dark-color: #0f2b33;
   --text-color: #869498;
   --dark-light-color: #898c9c99;
@@ -21,8 +21,7 @@
 
 [data-theme="dark"] {
   --primary-color: #282a36;
-  --primary-nav-color: #25273188;
-  --primary-nav-border-color: #5c6bc0;
+  --primary-nav-color: #07080a81;
   --dark-color: #f8f8f8;
   --text-color: #b8b8b8;
 
