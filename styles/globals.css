@@ -132,3 +132,9 @@ p {
     transition-duration: 0.001ms !important;
   }
 }
+
+img
+{
+  max-width: 660px;
+  height: auto;
+}

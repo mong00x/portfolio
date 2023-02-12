@@ -2,6 +2,56 @@
     "projects": [
         {
             "id": "1",
+            "name": "Capstone Connect",
+            "cover":"./CapstoneConnect.png",
+            "description": "A full-stack application built for automating the capstone project selection process for students and facilitating communication between students and lecturers using cron job and auto emailer",
+            "demo": "https://cduprojects.spinetail.cdu.edu.au/",
+            "repo": "https://github.com/aznNoob/hit401-web-app",
+            "year": "2022",
+            "status": "completed",
+            "stacks": [
+                {
+                    "name": "Figma",
+                    "icontype":"ionic",
+                    "icon": "logo-figma"
+                },
+                {
+                    "name": "React",
+                    "icontype":"ionic",
+                    "icon": "logo-react"
+                },
+                {
+                    "name": "PHP",
+                    "icontype":"PHP",
+                    "icon": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MCA1MCAiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiPjxwYXRoIGQ9Ik0gMjUgMTIgQyAxMS41NDI5NjkgMTIgMSAxNy43MTA5MzggMSAyNSBDIDEgMzIuMjg5MDYzIDExLjU0Mjk2OSAzOCAyNSAzOCBDIDM4LjQ1NzAzMSAzOCA0OSAzMi4yODkwNjMgNDkgMjUgQyA0OSAxNy43MTA5MzggMzguNDU3MDMxIDEyIDI1IDEyIFogTSAyMi41MDc4MTMgMTYgTCAyNS4xMjg5MDYgMTYgTCAyNC4yOTY4NzUgMjAgTCAyNi42MzY3MTkgMjAgQyAyOC4xMjEwOTQgMjAgMjkuMTE3MTg4IDIwLjIwNzAzMSAyOS42ODM1OTQgMjAuNzI2NTYzIEMgMzAuMjM4MjgxIDIxLjIzODI4MSAzMC40MDYyNSAyMi4wNzgxMjUgMzAuMTgzNTk0IDIzLjIyMjY1NiBMIDI5LjE0NDUzMSAyOCBMIDI2LjQ4MDQ2OSAyOCBMIDI3LjQzNzUgMjMuNTgyMDMxIEMgMjcuNTU0Njg4IDIyLjk3NjU2MyAyNy41MDc4MTMgMjIuNTU0Njg4IDI3LjMwNDY4OCAyMi4zMzIwMzEgQyAyNy4xMDE1NjMgMjIuMTA5Mzc1IDI2LjY1NjI1IDIyIDI1Ljk4ODI4MSAyMiBMIDIzLjg5MDYyNSAyMiBMIDIyLjYyNSAyOCBMIDIwIDI4IFogTSAxMSAyMCBMIDE2LjMzMjAzMSAyMCBDIDE4Ljg3NSAyMCAyMC40MTQwNjMgMjEuNzAzMTI1IDE5LjgxMjUgMjQuMjQ2MDk0IEMgMTkuMTEzMjgxIDI3LjE5OTIxOSAxNy4yMzgyODEgMjggMTMuNzkyOTY5IDI4IEwgMTIuMTQ0NTMxIDI4IEwgMTEuNjIxMDk0IDMxIEwgOC45NzI2NTYgMzEgWiBNIDMyIDIwIEwgMzcuMzMyMDMxIDIwIEMgMzkuODc1IDIwIDQxLjQxNDA2MyAyMS43MDMxMjUgNDAuODEyNSAyNC4yNDYwOTQgQyA0MC4xMTMyODEgMjcuMTk5MjE5IDM4LjIzODI4MSAyOCAzNC43OTI5NjkgMjggTCAzMy4xNDQ1MzEgMjggTCAzMi42MjEwOTQgMzEgTCAyOS45NzI2NTYgMzEgWiBNIDEzLjI2OTUzMSAyMiBMIDEyLjUxNTYyNSAyNiBMIDE0LjIyNjU2MyAyNiBDIDE1LjcwNzAzMSAyNiAxNy4wODIwMzEgMjUuODMyMDMxIDE3LjMxMjUgMjMuNjI1IEMgMTcuMzk4NDM4IDIyLjc2OTUzMSAxNy4wNDI5NjkgMjIgMTUuMzMyMDMxIDIyIFogTSAzNC4yNjk1MzEgMjIgTCAzMy41MTU2MjUgMjYgTCAzNS4yMjY1NjMgMjYgQyAzNi43MDcwMzEgMjYgMzguMDgyMDMxIDI1LjgzMjAzMSAzOC4zMTI1IDIzLjYyNSBDIDM4LjM5ODQzOCAyMi43Njk1MzEgMzguMDQyOTY5IDIyIDM2LjMzMjAzMSAyMiBaIi8+PC9zdmc+"
+                },
+                {
+                    "name": "MySQL",
+                    "icontype":"MySql",
+                    "icon": "PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCI+PHBhdGggZD0iTSAzLjEyNSAxIEMgMi4yMTkgMSAxLjUwMzA2MjUgMS40ODA1IDEuMTY0MDYyNSAyLjMxMjUgQyAxLjA1NzA2MjUgMi41Njk1IDEuMDAyOTUzMSAyLjg0MjA0NjkgMS4wMDE5NTMxIDMuMTIzMDQ2OSBDIDEuMDAwOTUzMSA0LjA1NDA0NjkgMS42MDA5Mzc1IDQuODA5NzE4OCAxLjk2MDkzNzUgNS4yNjE3MTg4IEMgMi4wMjM5Mzc1IDUuMzQwNzE4NyAyLjA4MDYyNSA1LjQxMTA5MzggMi4xNDA2MjUgNS40OTYwOTM4IEwgMi4zMDI3MzQ0IDUuNzEwOTM3NSBDIDIuNDYzNzM0NCA1LjkyMTkzNzUgMi42NDcwNzgxIDYuMTYxMjUgMi43MDUwNzgxIDYuMjgxMjUgQyAyLjcyNDA3ODEgNi4zMzYyNSAyLjc0OTIwMzEgNi40MzI2ODc1IDIuNzgzMjAzMSA2LjU1NDY4NzUgQyAyLjk0MDIwMzEgNy4xMTk2ODc1IDMuMjMzMjE4NyA4LjE2OTc1IDMuNjk5MjE4OCA4Ljk2ODc1IEMgMy44ODcyMTg3IDkuMjkwNzUgNC4xNTE3OTY5IDkuNjk1NDY4NyA0LjM0MTc5NjkgOS45ODA0Njg4IEMgNC4yMTQ3OTY5IDEwLjYxNjQ2OSA0IDExLjc4OCA0IDEyLjUgQyA0IDEzLjc1IDQuMjU5MjE4OCAxNC43NTM4NzUgNC44MjQyMTg4IDE1LjY3MTg3NSBDIDUuMDMzMjE4NyAxNS45OTk4NzUgNS42NzEgMTcgNi43NSAxNyBDIDcuMTMzIDE3IDcuNzY5NDA2MiAxNi44NTAzOTEgNy45NDE0MDYyIDE1LjkwMDM5MSBDIDguNzA2NDA2MyAxNi44ODczOTEgMTAgMTguMTI1IDEyIDE5IEMgMTIgMTkgOC4yNTA3OTY5IDE0LjYyNTQzOCA3LjU5MTc5NjkgMTEuODk4NDM4IEMgNy41OTE3OTY5IDExLjg5ODQzNyA2Ljg3NDYyNSAxMi42MjUzNzUgNi4yNjU2MjUgMTQuMTA5Mzc1IEMgNi4wODM2MjUgMTMuNjUxMzc1IDYgMTMuMTM1IDYgMTIuNSBDIDYgMTEuODczIDYuMjc1ODEyNSAxMC40NzEzNzUgNi4zODI4MTI1IDkuOTg0Mzc1IEwgNi40NzY1NjI1IDkuNTYwNTQ2OSBMIDYuMjMwNDY4OCA5LjIwMzEyNSBDIDYuMjI2NDY4NyA5LjE5NjEyNSA1LjcyMjczNDQgOC40Njg4OTA2IDUuNDI3NzM0NCA3Ljk2Mjg5MDYgQyA1LjA5MTczNDQgNy4zODY4OTA2IDQuODQzOTM3NSA2LjQ5NTU3ODEgNC43MTA5Mzc1IDYuMDE3NTc4MSBDIDQuNjQ1OTM3NSA1Ljc4NDU3ODEgNC41OTQ4NzUgNS42MTU5NTMxIDQuNTQ2ODc1IDUuNTAxOTUzMSBDIDQuMzcxODc1IDUuMTIyOTUzMSA0LjExNTYyNSA0Ljc5MDA5MzcgMy44OTA2MjUgNC40OTYwOTM4IEwgMy43NjU2MjUgNC4zMzAwNzgxIEMgMy43MDI2MjUgNC4yMzkwNzgxIDMuNjE5MzkwNiA0LjEzMzYyNSAzLjUyNTM5MDYgNC4wMTU2MjUgQyAzLjM0MjM5MDYgMy43ODU2MjUgMy4wMDE3MTg4IDMuMzU3MDMxMiAzLjAxMTcxODggMy4wODIwMzEyIEwgMy4xMjMwNDY5IDMuMDAzOTA2MiBMIDMuMTI1IDMgQyAzLjkyIDMgNC45NDQwNzgxIDMuNTY0MzQzNyA1LjMzMDA3ODEgMy43NzczNDM4IEMgNS40NTYwNzgxIDMuODQ2MzQzOCA1LjU0ODY1NjMgMy44OTQwMTU2IDUuNTk3NjU2MiAzLjkxNjAxNTYgTCA1Ljc3MTQ4NDQgMy45OTIxODc1IEwgNi4xMTMyODEyIDQuMDAzOTA2MiBDIDYuNTYwMjgxMyA0LjAxMzkwNjIgNy45MTg5MDYzIDQuMDQ1Njg3NSA4Ljg3ODkwNjIgNC40Mjk2ODc1IEMgMTAuNjI5OTA2IDUuMTI5Njg3NSAxMS41OTgwMzEgNS44MzAzNzUgMTIuNTgyMDMxIDcuMTA5Mzc1IEMgMTQuOTA2MDMxIDEwLjEzMTM3NSAxNS43NjM0ODQgMTQuMDQ0OTg0IDE1Ljc3MTQ4NCAxNC4wODM5ODQgTCAxNS44OTY0ODQgMTQuNjQ4NDM4IEwgMTYuNDQzMzU5IDE0LjgyNjE3MiBDIDE2LjQ2MjM1OSAxNC44MzMxNzIgMTcuOTkyOTIyIDE1LjM0NDY0MSAxOS40MTk5MjIgMTYuNjgxNjQxIEMgMTcuNjI0OTIyIDE3LjEyNTY0MSAxNyAxOCAxNyAxOCBDIDE3IDE4IDE3LjQ3NiAxOC45MjggMTkuNzUgMjAuMzc1IEMgMjEuMTI1IDIxLjI1IDIxLjg3NSAyMS44NzUgMjMgMjMgQyAyMyAyMyAyMS44NzU2ODggMjAuNDk5ODEzIDIwLjMwNDY4OCAxOC41MDc4MTIgQyAyMS41MDA2ODcgMTguMTI0ODEzIDIyLjk3MDcwMyAxNy45MjU3ODEgMjIuOTcwNzAzIDE3LjkyNTc4MSBMIDIyLjA2MDU0NyAxNi42NjQwNjIgQyAyMC41NjI1NDcgMTQuNTg3MDYzIDE4LjU1MzY1NiAxMy41Mzg4NTkgMTcuNTk3NjU2IDEzLjEzMDg1OSBDIDE3LjI2NTY1NiAxMS44NjQ4NTkgMTYuMjYyOTY5IDguNjE0NjI1IDE0LjE2Nzk2OSA1Ljg5MDYyNSBDIDEyLjk2ODk2OSA0LjMzMTYyNSAxMS42OTMwOTQgMy4zOTkzMTI1IDkuNjIxMDkzOCAyLjU3MDMxMjUgQyA4LjM5NDA5MzcgMi4wODAzMTI1IDYuOTE4NzE4OCAyLjAyMTg1OTQgNi4yNjE3MTg4IDIuMDA1ODU5NCBDIDUuNjg2NzE4NyAxLjY4OTg1OTQgNC40MDkgMSAzLjEyNSAxIHogTSA3LjE4NzUgNSBDIDcuMTg3NSA1IDYuNzUgNSA2LjI1IDUuMTI1IEwgNy42MjUgNi45OTgwNDY5IEMgOCA2LjUwMDA0NjkgOCA1LjkxNzk2ODggOCA1LjkxNzk2ODggQyA4IDUuOTE3OTY4OCA3Ljc1MDUgNS4yNSA3LjE4NzUgNSB6Ii8+PC9zdmc+"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "NT Bus Tracker",
+            "cover":"./NTBusTracker.png",
+            "description": "A high fidlity prototype of a bus tracker for the NT bus system.",
+            "demo": "https://www.figma.com/proto/doI3779mupWj4YIfOlIi1o/HIT-381-Prototype?page-id=3%3A2659&node-id=136%3A635&viewport=2236%2C2960%2C1.73&scaling=min-zoom&starting-point-node-id=136%3A635",
+            "repo": "",
+            "year": "2022",
+            "status": "",
+            "stacks": [
+                {
+                    "name": "Figma",
+                    "icontype":"ionic",
+                    "icon": "logo-figma"
+                }
+                
+            ]
+        },
+        {
+            "id": "3",
             "name": "Epic To-Do",
             "cover":"./EpicTodo.png",
             "description": "A React To-Do list web app and advertised by a fully responsive landing page.",
@@ -38,7 +88,7 @@
             ]
         },
         {
-            "id": "2",
+            "id": "4",
             "name": "Food Keeper",
             "cover":"./FoodKeeper.png",
             "description": "A cross-platform mobile application developed for youth groups to manage ingredients at home.",
@@ -73,7 +123,7 @@
             ]
         },
         {
-            "id": "3",
+            "id": "5",
             "name": "Invoicing System redesign",
             "cover":"./InvSystem.png",
             "description": "Redesign of a web invoicing system driven by ASP.Net Core MVC. The new design ensures that the UI is consistent and responsive across platforms.",
@@ -106,7 +156,7 @@
             ]
         },
         {
-            "id": "4",
+            "id": "6",
             "name": "Favour record system",
             "cover":"./Favour.png",
             "description": "A MERN stack web application that is designed to be a tracker for favours between a group of people. ",
