@@ -190,14 +190,16 @@
     padding: 0 1rem;
   }
 
+  .navBtnGroup {
+    display: flex !important;
+    margin-right: 4rem !important;
+  }
+
   .navBtnContainer {
     margin: 1rem;
   }
 
-  .navBtnGroup {
-    display: none;
-  }
-
+ 
   .hero {
     padding-top: 4rem;
   }
