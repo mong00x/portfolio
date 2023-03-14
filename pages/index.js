@@ -39,16 +39,13 @@ export default function Home() {
         nomodule
         src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
       ></script>
-      <style>
-        @import
-        url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Sans:wght@400;700&family=Roboto&display=swap');
-      </style>
+ 
 
-      <Head>
+      <head>
         <title>Mong00x</title>
         <meta name="description" content="Mong00x.me" />
         <link rel="icon" href="/favicon.ico" />
-      </Head>
+      </head>
       <nav className={styles.nav}>
         <div className={styles.navBtnContainer}>
           {/* <button
@@ -119,7 +116,34 @@ export default function Home() {
             </div>
           </div>
         </section> */}
+        
+        
+
       </main>
+      <footer className={styles.footer}>
+          <div className={styles.container}>
+            <div className={styles.footerContent}>
+              <div className={styles.footerLeft}>
+                <p>
+                  ✨ Created by Mong00x © { new Date().getFullYear()}
+                </p>
+              </div>
+              <div className={styles.footerRight}>
+                <a className={styles.linkedin} href="
+                  https://www.linkedin.com/in/meng-yuan-0b0b1b1b1/">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+               
+                <a className={styles.github} href="https://github.com/mong00x">
+                  <ion-icon name="logo-github"></ion-icon>
+                </a>
+                <a className={styles.devpost} href="https://devpost.com/mong00x?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">
+                  Devpost
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
     </div>
   );
 }
