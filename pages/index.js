@@ -80,7 +80,7 @@ export default function Home() {
               <p className={styles.intro}>
                 I'm an aspiring frontend developer and UI/UX designer(sometimes)
                 with a passion for delivering interactive and amazing digital
-                experiences across platforms.
+                experiences.
               </p>
             </div>
           </div>
