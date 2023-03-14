@@ -13,7 +13,7 @@
 .project img {
   width: 100%;
   padding: auto;
-  height: auto;
+  aspect-ratio: 16/10;
   border-radius: calc(var(--border-radius) * 2) calc(var(--border-radius) * 2) 0
     0;
   transition: all 0.2s ease;
