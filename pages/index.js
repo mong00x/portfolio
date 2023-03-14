@@ -130,7 +130,7 @@ export default function Home() {
               </div>
               <div className={styles.footerRight}>
                 <a className={styles.linkedin} href="
-                  https://www.linkedin.com/in/meng-yuan-0b0b1b1b1/">
+                  https://www.linkedin.com/in/meng-yuan-0a530b1b0/">
                   <ion-icon name="logo-linkedin"></ion-icon>
                 </a>
                
