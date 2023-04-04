@@ -26,30 +26,31 @@ const demoRedirect = (demo) => {
   window.open(demo, "").focus();
 };
 
-const Project = (project) => {
+const Project = ({key, data}) => {
   return (
-    <motion.div
+    <motion.div 
+      key={key}
       className={styles.project}
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.3 }}
       variants={cardVariants}
     >
-      <button onClick={() => demoRedirect(project.project.demo)}>
+      <button onClick={() => demoRedirect(data.demo)}>
         <img
           className={styles.projectcover}
-          src={project.project.cover}
-          alt={project.project.name}
+          src={data.cover}
+          alt={data.name}
         />
       </button>
 
       <div className={styles.contextcontainer}>
         <div className={styles.context}>
           <div className={styles.contextheader}>
-            <h3>{project.project.name}</h3>
+            <h3>{data.name}</h3>
             <div className={styles.contextbtngroup}>
-              <button onClick={() => repoRedirect(project.project.repo)}>
-                {project.project.repo.match(/bitbucket/g) ? (
+              <button onClick={() => repoRedirect(data.repo)}>
+                {data.repo.match(/bitbucket/g) ? (
                   <ion-icon name="logo-bitbucket"></ion-icon>
                 ) : (
                   <ion-icon name="logo-github"></ion-icon>
@@ -57,7 +58,7 @@ const Project = (project) => {
               </button>
             </div>
           </div>
-          <p className={styles.contextbody}>{project.project.description}</p>
+          <p className={styles.contextbody}>{data.description}</p>
         </div>
         <div className={styles.projectfooter}>
           <p
@@ -67,10 +68,10 @@ const Project = (project) => {
               fontWeight: "bold",
             }}
           >
-            {project.project.year}
+            {data.year}
           </p>
           <div className={styles.stacksWrapper}>
-            {project.project.stacks.map((stack) => (
+            {data.stacks.map((stack) => (
               <div>
                 {stack.icontype === "ionic" ? (
                   <ion-icon name={stack.icon}></ion-icon>
