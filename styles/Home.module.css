@@ -199,9 +199,9 @@
     padding: 0 30vw;
   }
 
-  .navBtnContainer {
+  /* .navBtnContainer {
     margin: 0 30vw;
-  }
+  } */
 
   .grid {
     grid-template-columns: 1fr 1fr ;
@@ -215,12 +215,12 @@
   }
 
   .navBtnContainer {
-    margin: 2rem;
+    margin: 1rem;
   }
 
-  .hero {
-    padding-top: 4rem;
-  }
+  /* .hero {
+    padding-top: 8rem;
+  } */
 
   .intro {
     font-size: 1.25rem !important;
@@ -228,7 +228,7 @@
   }
 
   .grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -249,7 +249,7 @@
 
  
   .hero {
-    padding-top: 4rem;
+    padding: 6rem 0;
   }
 
   .hero .intro {
