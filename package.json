@@ -12,14 +12,20 @@
     "@chakra-ui/react": "^2.5.5",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@popmotion/popcorn": "^0.4.4",
     "framer-motion": "^10.10.0",
     "next": "^13.2.4",
+    "popmotion": "^11.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.0",
     "use-local-storage": "^2.3.6"
   },
   "devDependencies": {
+    "@types/node": "18.16.2",
+    "@types/react": "18.2.0",
     "eslint": "8.37.0",
-    "eslint-config-next": "^13.2.4"
+    "eslint-config-next": "^13.2.4",
+    "typescript": "5.0.4"
   }
 }
