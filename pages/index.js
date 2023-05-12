@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import React from "react";
+import { ChakraProvider } from "@chakra-ui/react";
 
 import Data from "../data.json";
 
@@ -31,7 +32,7 @@ export default function Home() {
 
   return (
     <>
-       <Head>
+      <Head>
       <title>Mong00x</title>
       <meta name="description" content="Mong00x.me" />
       <link rel="icon" href="/favicon.ico" />
@@ -74,6 +75,8 @@ export default function Home() {
                   <h1 className={styles.meng}>
                     Hi! <div className={styles.linebreaker}></div>I'm Meng
                   </h1>
+                  {/* make it pop with motion */}
+                  
                   <h1 className={styles.emoji}>👋</h1>
                 </div>
                 <p className={styles.intro}>
@@ -84,17 +87,18 @@ export default function Home() {
               </div>
             </div>
           </section>
-
+          <ChakraProvider>
           <section id="projects" className={styles.projects}>
             <div className={styles.container}>
               <h2>Projects</h2>
               <div className={styles.grid}>
                 {Data.projects.map((project) => (
-                  <Project key={project.id} data={project} />
+                  <Project key={project.id} data={project} theme={theme}/>
                 ))}
               </div>
             </div>
           </section>
+          </ChakraProvider>
 
           {/* <section id="about" className={styles.container}>
             <h2>About</h2>

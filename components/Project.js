@@ -3,6 +3,22 @@ import React, { useState, useEffect } from "react";
 import styles from "../styles/Project.module.css";
 import { motion, Variants } from "framer-motion";
 
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  Button,
+  useDisclosure,
+  defineStyle, 
+  defineStyleConfig
+} from '@chakra-ui/react'
+
+import { ExternalLinkIcon } from '@chakra-ui/icons'
+
 const cardVariants = {
   offscreen: {
     opacity: 0,
@@ -26,7 +42,8 @@ const demoRedirect = (demo) => {
   window.open(demo, "").focus();
 };
 
-const Project = ({key, data}) => {
+const Project = ({key, data, theme}) => {
+  const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <motion.div 
       key={key}
@@ -36,14 +53,39 @@ const Project = ({key, data}) => {
       viewport={{ once: true, amount: 0.3 }}
       variants={cardVariants}
     >
-      <button onClick={() => demoRedirect(data.demo)}>
+      <>
+      <Modal isOpen={isOpen} onClose={onClose} size="4xl">
+        <ModalOverlay />
+        <ModalContent bg={theme == "light" ? "#ffffff" : "#363843"} color={theme == "light" ? "#0f2b33" : "#f8f8f8"}>
+          <ModalHeader color={theme == "light" ? "#0f2b33" : "#f8f8f8"} fontSize="3xl">{data.name}</ModalHeader>
+          <ModalCloseButton color={theme == "light" ? "#0f2b33" : "#f8f8f8"} />
+          <ModalBody color={theme == "light" ? "#0f2b33" : "#f8f8f8"} fontSize="xl">
+           {data.description}
+          </ModalBody>
+
+          <ModalFooter>
+            <Button bg="#8395ff" _hover={{ bg: "#8395ff55" }} mr={3} onClick={() => demoRedirect(data.demo)}>
+              Visit the site <ExternalLinkIcon/>
+            </Button>
+           
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </>
+      {/* <button onClick={() => demoRedirect(data.demo)}>
+        <img
+          className={styles.projectcover}
+          src={data.cover}
+          alt={data.name}
+        />
+      </button> */}
+      <button onClick={onOpen}>
         <img
           className={styles.projectcover}
           src={data.cover}
           alt={data.name}
         />
       </button>
-
       <div className={styles.contextcontainer}>
         <div className={styles.context}>
           <div className={styles.contextheader}>

@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -14,11 +18,25 @@
     "noEmit": true,
     "jsx": "preserve",
     "baseUrl": "./",
-    "types": ["node"]
+    "types": [
+      "node"
+    ],
+    "strict": false,
+    "incremental": true
   },
-  "include": ["./pages/**/*", "./components/**/*", "./lib/**/*"],
-  "exclude": ["node_modules"],
+  "include": [
+    "./pages/**/*",
+    "./components/**/*",
+    "./lib/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
   "awesomeTypescriptLoaderOptions": {
-    "reportFiles": ["pages/**/*", "components/**/*", "lib/**/*"]
+    "reportFiles": [
+      "pages/**/*",
+      "components/**/*",
+      "lib/**/*"
+    ]
   }
 }

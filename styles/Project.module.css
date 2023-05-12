@@ -13,7 +13,7 @@
 .project img {
   width: 100%;
   padding: auto;
-  aspect-ratio: 16/10;
+  aspect-ratio: 1.451/1;
   border-radius: calc(var(--border-radius) * 2) calc(var(--border-radius) * 2) 0
     0;
   transition: all 0.2s ease;
@@ -29,6 +29,9 @@
   flex-direction: column;
   padding: 1.25rem;
   height: 100%;
+}
+.chakra-modal__content{
+  background: var(--project-color) !important;
 }
 
 .contextheader {
