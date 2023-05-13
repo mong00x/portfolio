@@ -53,25 +53,7 @@ const Project = ({key, data, theme}) => {
       viewport={{ once: true, amount: 0.3 }}
       variants={cardVariants}
     >
-      <>
-      <Modal isOpen={isOpen} onClose={onClose} size="4xl">
-        <ModalOverlay />
-        <ModalContent bg={theme == "light" ? "#ffffff" : "#363843"} color={theme == "light" ? "#0f2b33" : "#f8f8f8"}>
-          <ModalHeader color={theme == "light" ? "#0f2b33" : "#f8f8f8"} fontSize="3xl">{data.name}</ModalHeader>
-          <ModalCloseButton color={theme == "light" ? "#0f2b33" : "#f8f8f8"} />
-          <ModalBody color={theme == "light" ? "#0f2b33" : "#f8f8f8"} fontSize="xl">
-           {data.description}
-          </ModalBody>
-
-          <ModalFooter>
-            <Button bg="#8395ff" _hover={{ bg: "#8395ff55" }} mr={3} onClick={() => demoRedirect(data.demo)}>
-              Visit the site <ExternalLinkIcon/>
-            </Button>
-           
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
-    </>
+      
       {/* <button onClick={() => demoRedirect(data.demo)}>
         <img
           className={styles.projectcover}
@@ -217,6 +199,47 @@ const Project = ({key, data, theme}) => {
           </div>
         </div>
       </div>
+      <>
+      {theme == "light" ? (
+        <Modal isOpen={isOpen} onClose={onClose} size="4xl" >
+        <ModalOverlay />
+        <ModalContent bg="#ffffff"  color="#0f2b33" mt="8" minH="120vh">
+          <ModalHeader color="#0f2b33" fontSize="3xl">{data.name}</ModalHeader>
+          <ModalCloseButton color="#0f2b33" borderColor="#0f2b33" />
+          <ModalBody color= "#0f2b33"  fontSize="xl">
+           {data.description}
+          </ModalBody>
+
+          <ModalFooter>
+            <Button bg="#8395ff22"  _hover={{ bg: "#8395ff75" }}  mr={3} onClick={() => demoRedirect(data.demo)}>
+              Visit the site <ExternalLinkIcon/>
+            </Button>
+           
+          </ModalFooter> 
+        </ModalContent>
+      </Modal>
+      ):
+      (
+        <Modal isOpen={isOpen} onClose={onClose} size="4xl" >
+        <ModalOverlay />
+        <ModalContent bg= "#363843" color="#f8f8f8" mt="8" minH="120vh">
+          <ModalHeader color="#f8f8f8" fontSize="3xl">{data.name}</ModalHeader>
+          <ModalCloseButton color="#f8f8f8" borderColor="#f8f8f8" />
+          <ModalBody color="#f8f8f8" fontSize="xl">
+           {data.description}
+          </ModalBody>
+
+          <ModalFooter>
+            <Button bg="#8395ff22" color="#f8f8f8"  _hover={{ bg: "#8395ff75" }}  mr={3} onClick={() => demoRedirect(data.demo)}>
+              Visit the site <ExternalLinkIcon/>
+            </Button>
+           
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+      )}
+    </>
+
     </motion.div>
   );
 };
