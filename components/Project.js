@@ -54,20 +54,20 @@ const Project = ({key, data, theme}) => {
       variants={cardVariants}
     >
       
-      {/* <button onClick={() => demoRedirect(data.demo)}>
-        <img
-          className={styles.projectcover}
-          src={data.cover}
-          alt={data.name}
-        />
-      </button> */}
-      <button onClick={onOpen}>
+      <button onClick={() => demoRedirect(data.demo)}>
         <img
           className={styles.projectcover}
           src={data.cover}
           alt={data.name}
         />
       </button>
+      {/* <button onClick={onOpen}>
+        <img
+          className={styles.projectcover}
+          src={data.cover}
+          alt={data.name}
+        />
+      </button> */}
       <div className={styles.contextcontainer}>
         <div className={styles.context}>
           <div className={styles.contextheader}>
@@ -200,7 +200,7 @@ const Project = ({key, data, theme}) => {
         </div>
       </div>
       <>
-      {theme == "light" ? (
+      {/* {theme == "light" ? (
         <Modal isOpen={isOpen} onClose={onClose} size="4xl" >
         <ModalOverlay />
         <ModalContent bg="#ffffff"  color="#0f2b33" mt="8" minH="120vh">
@@ -237,7 +237,7 @@ const Project = ({key, data, theme}) => {
           </ModalFooter>
         </ModalContent>
       </Modal>
-      )}
+      )} */}
     </>
 
     </motion.div>
