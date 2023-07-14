@@ -92,6 +92,12 @@
   font-size: 1.5rem;
   margin: auto 0;
 }
+
+.ion-icon:hover{
+  pointer-events: none;
+
+}
+
 .stacksWrapper svg {
   width: 1.5rem;
   height: auto;

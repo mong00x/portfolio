@@ -6,6 +6,7 @@
   display: flex;
 }
 
+
 .nav {
   background-color: var(--primary-nav-color);
   -webkit-backdrop-filter: blur(16px);
@@ -72,19 +73,38 @@
 .main {
   height: 100%;
   background-color: var(--primary-color);
+  padding-top: 4rem;
 }
 
 .hero {
-  padding: 8rem 0 4rem 0;
-  background-color: var(--primary-color);
 }
 
-.hero .greetings {
+.herobg{
+  margin:0 5vw;
+  width:89vw;
+  z-index:0;
+  top:6rem;
+  height:500px;
+  position:absolute;
+  background-image: url("../public/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 20px;
+}
+
+
+.greetings {
+  z-index:1;
+  margin-top: 8rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .title {
+  z-index:1;
   display: flex;
   flex-direction: row;
 }
@@ -94,17 +114,19 @@
 }
 
 .hero .intro {
-  width: 64%;
+  z-index:1;
+  width: 70%;
   color: var(--dark-color);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  justify-content: center;
 }
 
 /* @keyframes shine {
   to {
     background-position: 400% center;
   }
-} */
-/* .hero .meng {
+} 
+ .hero .meng {
   color: var(--accent2-color);
   background-clip: text;
   background: linear-gradient(
@@ -133,6 +155,8 @@
 }
 
 .projects {
+  padding-top: 8rem;
+
   padding-bottom: 4rem;
 }
 
@@ -145,10 +169,19 @@
   max-width: 1525px;
 }
 
+
 .footer{
   background-color: var(--primary-color);
   padding: 2rem 0;
   border-top: solid 4px var(--primary-nav-border-color);
+}
+
+.footerBorder{
+  transition: all 0.3s;
+}
+
+.footer > .container{
+  padding-top:54px;
 }
 
 .footerLeft{
@@ -222,6 +255,24 @@
     padding-top: 8rem;
   } */
 
+  .herobg{
+    margin:0 3rem 0 2rem;
+    width:93.5vw;
+    z-index:0;
+    top:4.5rem;
+    height:400px;
+    position:absolute;
+    background-image: url("../public/hero.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    border-radius: 12px;
+  }
+
+  .greetings {
+    margin-top: 3rem;
+  }
+
   .intro {
     font-size: 1.25rem !important;
     width: 80% !important;
@@ -248,18 +299,34 @@
   }
 
  
-  .hero {
+  /* .hero {
     padding: 6rem 0;
+  } */
+
+  .herobg{
+    margin:auto 1rem;
+    width:93vw;
+    z-index:0;
+    top:4.5rem;
+    height:400px;
+    position:absolute;
+    background-image: url("../public/hero.png");
+    background-size:1000px;
+    background-attachment: fixed;
+    border-radius: 20px;
+  }
+  .greetings {
+    margin-top: 3rem;
   }
 
   .hero .intro {
-    width: auto;
+    width: 90%;
     color: var(--dark-color);
     font-size: 1.25rem;
   }
 
   .linebreaker {
-    display: block;
+    display: none;
   }
 
   .emoji {

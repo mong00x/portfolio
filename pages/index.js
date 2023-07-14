@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import React from "react";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, Box } from "@chakra-ui/react";
 
 import Data from "../data.json";
 
@@ -68,24 +68,27 @@ export default function Home() {
         </nav>
 
         <main className={styles.main}>
-          <section className={styles.hero}>
-            <div className={styles.container}>
-              <div className={styles.greetings}>
-                <div className={(styles.flex, styles.title)}>
-                  <h1 className={styles.meng}>
-                    Hi! <div className={styles.linebreaker}></div>I'm Meng
-                  </h1>
-                  {/* make it pop with motion */}
-                  
-                  <h1 className={styles.emoji}>👋</h1>
+          <section className={styles.hero} >
+            
+              <Box className={styles.container} >
+                <div className={styles.greetings}>
+                  <div className={(styles.flex, styles.title)} >
+                    <h1 className={styles.meng}>
+                      Hi! <div className={styles.linebreaker}></div>I'm Meng
+                    </h1>
+                    {/* make it pop with motion */}
+                    
+                    <h1 className={styles.emoji}>👋</h1>
+                  </div>
+                  <p className={styles.intro}>
+                  As a Web Developer and occasional UI/UX Designer, 
+                  I find joy in creating dynamic, interactive digital experiences, 
+                  while maintaining a relaxed and innovative approach to my work.
+                  </p>
                 </div>
-                <p className={styles.intro}>
-                  I'm an aspiring frontend developer and UI/UX designer(sometimes)
-                  with a passion for delivering interactive and amazing digital
-                  experiences.
-                </p>
-              </div>
-            </div>
+              </Box>
+              <Box className={styles.herobg} filter='auto'  brightness={theme === "light" ? "25%" : "50%"} invert={theme === "light" ? "" : "0"}>
+            </Box>
           </section>
           <ChakraProvider>
           <section id="projects" className={styles.projects}>
@@ -123,12 +126,36 @@ export default function Home() {
           
 
         </main>
+        
         <footer className={styles.footer}>
+        <svg 
+        opacity={theme === "light" ? "0.8" : "0.3"}
+        
+        className={styles.footerBorder} 
+        _ngcontent-ced-c18="" 
+        aria-hidden="true" 
+        width="100%" 
+        height="8" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg">
+          <pattern 
+          _ngcontent-ced-c18="" 
+          id="a" 
+          width="91" 
+          height="8" 
+          patternUnits="userSpaceOnUse">
+            <g _ngcontent-ced-c18="" clip-path="url(#clip0_2426_11367)">
+              <path _ngcontent-ced-c18="" 
+              d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" 
+              stroke={theme === "light" ? "#E1E3E1" : "#A1A3A1"}
+              stroke-linecap="square">
+                </path></g></pattern><rect _ngcontent-ced-c18="" width="100%" height="100%" fill="url(#a)"></rect>
+        </svg>
             <div className={styles.container}>
               <div className={styles.footerContent}>
                 <div className={styles.footerLeft}>
                   <p>
-                    ✨ Created by Mong00x © { new Date().getFullYear()}
+                    ✨ Created by Meng Yuan © { new Date().getFullYear()}
                   </p>
                 </div>
                 <div className={styles.footerRight}>

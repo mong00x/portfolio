@@ -13,6 +13,8 @@
     "@chakra-ui/react": "^2.5.5",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
+    "@fontsource/open-sans": "^5.0.5",
+    "@fontsource/raleway": "^5.0.5",
     "@popmotion/popcorn": "^0.4.4",
     "framer-motion": "^10.10.0",
     "next": "^13.2.4",

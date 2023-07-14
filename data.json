@@ -4,9 +4,9 @@
             "id": "1",
             "name": "Capstone Connect",
             "cover":"./CapstoneConnect.png",
-            "description": "A full-stack application built for automating the capstone project selection process for students and facilitating communication between students and lecturers using cron job and auto emailer",
-            "demo": "https://cduprojects.spinetail.cdu.edu.au/",
-            "repo": "https://github.com/aznNoob/hit401-web-app",
+            "description": "A comprehensive full-stack application, designed to streamline the capstone project selection process for students, enhancing the communication flow between students and lecturers through the use of automated email dispatch and scheduled tasks (cron jobs).",
+            "demo": "https://main--sage-tapioca-de39e4.netlify.app/",
+            "repo": "https://github.com/mong00x/capstone-conect",
             "year": "2022",
             "status": "completed",
             "stacks": [
@@ -36,7 +36,7 @@
             "id": "2",
             "name": "NT Bus Tracker",
             "cover":"./NTBusTracker.png",
-            "description": "A high fidlity prototype of a bus tracker for the NT bus system.",
+            "description": "A high-fidelity Figma prototype that proposing a solution for real-time tracking and scheduling for the NT Bus System. This design vividly illustrates the potential enhancements to user interface and functionality, providing a new standard for public transit experiences.",
             "demo": "https://www.figma.com/proto/doI3779mupWj4YIfOlIi1o/HIT-381-Prototype?page-id=3%3A2659&node-id=136%3A635&viewport=2236%2C2960%2C1.73&scaling=min-zoom&starting-point-node-id=136%3A635",
             "repo": "",
             "year": "2022",
@@ -54,7 +54,7 @@
             "id": "3",
             "name": "Epic To-Do",
             "cover":"./EpicTodo.png",
-            "description": "A React To-Do list web app and advertised by a fully responsive landing page.",
+            "description": "A React-based To-Do list web application, coupled with a highly responsive and aesthetically pleasing landing page for promotion. The application facilitates efficient task management, while the landing page, designed with responsiveness in mind, ensures optimal user experience across various devices and screen sizes.",
             "demo": "https://epicbyte-cdu.bitbucket.io/project/pages/",
             "repo": "https://bitbucket.org/epicbyte-cdu/epicbyte-cdu.bitbucket.io/src/master/project/",
             "year": "2021",
@@ -91,7 +91,7 @@
             "id": "4",
             "name": "Food Keeper",
             "cover":"./FoodKeeper.png",
-            "description": "A cross-platform mobile application developed for youth groups to manage ingredients at home.",
+            "description": "A versatile cross-platform mobile application, expressly crafted for youth groups, designed to oversee and manage home ingredients. This comprehensive tool simplifies inventory tracking and ensures optimal usage of resources, promoting both efficiency and sustainability in home cooking endeavors.",
             "demo": "https://expo.dev/@mong00x/food-keeper",
             "repo": "https://github.com/mong00x/recipeheroRN",
             "year": "2021",
@@ -121,83 +121,9 @@
                 
                 
             ]
-        },
-        {
-            "id": "5",
-            "name": "Invoicing System redesign",
-            "cover":"./InvSystem.png",
-            "description": "Redesign of a web invoicing system driven by ASP.Net Core MVC. The new design ensures that the UI is consistent and responsive across platforms.",
-            "demo": "https://hit339.azurewebsites.net/",
-            "repo": "https://github.com/kanishchhabra/dotnetproject",
-            "year": "2021",
-            "status": "",
-            "stacks": [
-                {
-                    "name": "Bootstrap",
-                    "icontype":"bootstrap",
-                    "icon": ""
-                },
-                {
-                    "name": "CSS3",
-                    "icontype":"ionic",
-                    "icon": "logo-css3"
-                },
-
-                {
-                    "name": "Azure",
-                    "icontype":"azure",
-                    "icon": ""
-                },
-                {   
-                    "name":"Github",
-                    "icontype":"ionic",
-                    "icon": "logo-github"
-                }
-            ]
-        },
-        {
-            "id": "6",
-            "name": "Favour record system",
-            "cover":"./Favour.png",
-            "description": "A MERN stack web application that is designed to be a tracker for favours between a group of people. ",
-            "demo": "https://aip-group36.herokuapp.com/",
-            "repo": "https://github.com/haoqin-xu/aip36-ass2",
-            "year": "2020",
-            "status": "",
-            "stacks": [
-                {
-                    "name": "React",
-                    "icontype":"ionic",
-                    "icon": "logo-react"
-                },
-                {
-                    "name": "Node",
-                    "icontype":"ionic",
-                    "icon": "logo-nodejs"
-                },
-                {
-                    "name": "Bootstrap",
-                    "icontype":"bootstrap",
-                    "icon": ""
-                },
-                {
-                    "name": "TailwindCSS",
-                    "icontype":"tailwind",
-                    "icon": ""
-                },
-
-                {
-                    "name": "Heroku",
-                    "icontype":"heroku",
-                    "icon": ""
-                },
-                {   
-                    "name":"Github",
-                    "icontype":"ionic",
-                    "icon": "logo-github"
-                }
-            ]
         }
+        
+        
     ]
 
     
