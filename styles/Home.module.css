@@ -86,7 +86,7 @@
   top:6rem;
   height:500px;
   position:absolute;
-  background-image: url("../public/hero.png");
+  background-image: url("../public/hero.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -262,7 +262,7 @@
     top:4.5rem;
     height:400px;
     position:absolute;
-    background-image: url("../public/hero.png");
+    background-image: url("../public/hero.webp");
     background-repeat: no-repeat;
     background-size:cover;
     background-attachment: fixed;
@@ -310,7 +310,7 @@
     top:4.5rem;
     height:400px;
     position:absolute;
-    background-image: url("../public/hero.png");
+    background-image: url("../public/hero.webp");
     background-size:1000px;
     background-attachment: fixed;
     border-radius: 20px;
