@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <>
       <Head>
-      <title>Mong00x</title>
+      <title>Meng Yuan</title>
       <meta name="description" content="Mong00x.me" />
       <link rel="icon" href="/favicon.ico" />
       
