@@ -1,5 +1,7 @@
 .container {
   padding: 0 16em;
+  max-width: 1600px;
+  margin:auto;
 }
 
 .flex {
@@ -81,6 +83,7 @@
 
 .herobg{
   margin-left:5vw;
+  width: 90vw;
   z-index:0;
   top:6rem;
   height:500px;
@@ -165,7 +168,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 3rem;
   justify-items: center;
-  max-width: 1525px;
+  /* max-width: 1525px; */
 }
 
 
