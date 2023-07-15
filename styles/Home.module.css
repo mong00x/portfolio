@@ -80,8 +80,7 @@
 }
 
 .herobg{
-  margin-left:2vw;
-  width: 95vw;
+  margin-left:5vw;
   z-index:0;
   top:6rem;
   height:500px;
@@ -257,7 +256,7 @@
 
   .herobg{
     margin-left:2vw;
-    width:96vw;
+    width:95vw;
     z-index:0;
     top:4.5rem;
     height:400px;
