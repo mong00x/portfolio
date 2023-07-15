@@ -100,7 +100,7 @@ p {
   letter-spacing: 0.4px;
 }
 
-@media (max-width: 60em) {
+@media (max-width: 100em) {
   h1 {
     font-size: 3rem;
   }
