@@ -47,14 +47,14 @@ export default function Home() {
 
 
         <nav className={styles.nav}>
-          <div className={styles.navBtnContainer}>
+          <div className={styles.container}>
             {/* <button
               className={styles.brand}
               onClick={() => (window.location.href = "#")}
             >
               Meng Yuan
             </button> */}
-            <div className={styles.navBtnGroup}></div>
+            {/* <div className={styles.navBtnGroup}></div> */}
             <div className={styles.themeBtnContainer}>
               <button className={styles.themeBtn} onClick={switchTheme}>
                 {theme === "light" ? (
