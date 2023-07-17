@@ -101,6 +101,7 @@
 .stacksWrapper svg {
   width: 1.5rem;
   height: auto;
+  margin: auto 4px;
 }
 
 .stacksWrapper div {
