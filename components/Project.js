@@ -62,21 +62,32 @@ const Project = ({key, data, theme}) => {
       {
         data.status === "in progress" &&
         (
-          null
-        //   <Alert status='info' zIndex={10} top="50px" mt="-54px" fontSize="16px" pt="12px" pb="12px" bg="rgba(144, 205, 244, 0.50)">
-        //   <WarningIcon />
-        //   This project is still under active development. 
-        // </Alert>
+          <Alert status='info' zIndex={10} position="absolute"  width="-webkit-fit-content"  fontSize="12px"   bg="rgba(144, 205, 244, 0.50)" borderRadius="8px 0 20px 0">
+          <WarningIcon pr="4px"/>
+          This project is still under active development. 
+        </Alert>
         )
       }
      
       <button onClick={() => demoRedirect(data.demo)}>
-        
-        <img
+        {
+          data.status === "in progress" ? (
+            <img
+          className={styles.projectcoverinprogress}
+          src={data.cover}
+          alt={data.name}
+          
+        />
+          ):(
+            <img
           className={styles.projectcover}
           src={data.cover}
           alt={data.name}
+          
         />
+          )
+        }
+        
       </button>
       
       {/* <button onClick={onOpen}>
