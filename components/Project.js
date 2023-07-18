@@ -54,17 +54,19 @@ const Project = ({key, data, theme}) => {
       key={key}
       className={styles.project}
       initial="offscreen"
-      whileInView="onscreen"
+      animate={"onscreen"}
+      delay={0.5}
       viewport={{ once: true, amount: 0.3 }}
       variants={cardVariants}
     >
       {
         data.status === "in progress" &&
         (
-          <Alert status='info' zIndex={10} top="50px" mt="-54px" fontSize="16px" pt="12px" pb="12px" bg="rgba(144, 205, 244, 0.50)">
-          <WarningIcon />
-          This project is still under active development. 
-        </Alert>
+          null
+        //   <Alert status='info' zIndex={10} top="50px" mt="-54px" fontSize="16px" pt="12px" pb="12px" bg="rgba(144, 205, 244, 0.50)">
+        //   <WarningIcon />
+        //   This project is still under active development. 
+        // </Alert>
         )
       }
      
