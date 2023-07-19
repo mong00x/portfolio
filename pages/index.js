@@ -72,18 +72,18 @@ export default function Home() {
             </button> */}
             {/* <div className={styles.navBtnGroup}></div> */}
             <div className={styles.navBtnContainer}>
-            <Popover  >
+            <Popover placement="auto">
               <PopoverTrigger>
               <button className={styles.navBtn}>
                 <ion-icon name="qr-code-outline"></ion-icon>
               </button>
               </PopoverTrigger>
-              <PopoverContent  mr="4px" p="12px" gap="12px" bg={theme === "light" ? "white" : "black"} borderRadius={12} color={theme === "light" ? "#0f2b33" : "#f8f8f8"}>
+              <PopoverContent  mr="4px" p="12px" gap="12px" bg={theme === "light" ? "white" : "black"} borderRadius={12} color={theme === "light" ? "#0f2b33" : "#f8f8f8"} >
                 <Flex flexDir="row-reverse" gap="24px" w="100%" justifyContent="space-between">
                   <PopoverCloseButton borderRadius="12px"  fontSize="1rem" w="2.5rem" h="2.5rem" alignSelf="flex-end"/>
                   <PopoverHeader fontSize="20px">Check it on your phone</PopoverHeader>
                 </Flex>
-                <Image src="/qrcode.png" alt="qrcode" w="70vw" maxW="600px" m="auto"/>
+                <Image src="/qrcode.png" alt="qrcode" w="70vw" maxW="360px" m="auto"/>
               </PopoverContent>
             </Popover>
              
