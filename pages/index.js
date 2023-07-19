@@ -1,7 +1,23 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import React from "react";
-import { ChakraProvider, Box } from "@chakra-ui/react";
+import { 
+  ChakraProvider, 
+  Box, 
+  Popover,
+  PopoverTrigger,
+  PopoverContent,
+  PopoverHeader,
+  PopoverBody,
+  PopoverFooter,
+  PopoverArrow,
+  PopoverCloseButton,
+  PopoverAnchor,
+  Image,
+  Flex
+} from "@chakra-ui/react";
+
+import qrcode from "../public/qrcode.png";
 
 import Data from "../data.json";
 
@@ -34,7 +50,7 @@ export default function Home() {
     <>
       <Head>
       <title>Meng Yuan</title>
-      <meta name="description" content="Mong00x.me" />
+      <meta name="description" content="mengyuan.dev" />
       <link rel="icon" href="/favicon.ico" />
       
     </Head>
@@ -48,6 +64,7 @@ export default function Home() {
 
         <nav className={styles.nav}>
           <div className={styles.container}>
+
             {/* <button
               className={styles.brand}
               onClick={() => (window.location.href = "#")}
@@ -55,8 +72,23 @@ export default function Home() {
               Meng Yuan
             </button> */}
             {/* <div className={styles.navBtnGroup}></div> */}
-            <div className={styles.themeBtnContainer}>
-              <button className={styles.themeBtn} onClick={switchTheme}>
+            <div className={styles.navBtnContainer}>
+            <Popover  >
+              <PopoverTrigger>
+              <button className={styles.navBtn}>
+                <ion-icon name="qr-code-outline"></ion-icon>
+              </button>
+              </PopoverTrigger>
+              <PopoverContent  mr="4px" p="12px" gap="12px" bg={theme === "light" ? "white" : "black"} borderRadius={12} color={theme === "light" ? "#0f2b33" : "#f8f8f8"}>
+                <Flex flexDir="row-reverse" gap="24px" w="100%" justifyContent="space-between">
+                  <PopoverCloseButton borderRadius="12px"  fontSize="1rem" w="2rem" h="2rem" alignSelf="flex-end"/>
+                  <PopoverHeader fontSize="20px">Check it on your phone</PopoverHeader>
+                </Flex>
+                <Image src="/qrcode.png" alt="qrcode" maxW="70vw" m="auto"/>
+              </PopoverContent>
+            </Popover>
+             
+              <button className={styles.navBtn} onClick={switchTheme}>
                 {theme === "light" ? (
                   <ion-icon name="sunny-outline"></ion-icon>
                 ) : (
@@ -144,7 +176,7 @@ export default function Home() {
           width="91" 
           height="8" 
           patternUnits="userSpaceOnUse">
-            <g _ngcontent-ced-c18="" clip-path="url(#clip0_2426_11367)">
+            <g _ngcontent-ced-c18="" clipPath="url(#clip0_2426_11367)">
               <path _ngcontent-ced-c18="" 
               d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" 
               stroke={theme === "light" ? "#E1E3E1" : "#A1A3A1"}
