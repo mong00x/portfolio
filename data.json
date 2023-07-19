@@ -43,7 +43,7 @@
             "name": "Capstone Connect",
             "cover":"./CapstoneConnect.png",
             "description": "A comprehensive full-stack application, designed to streamline the capstone project selection process for students, enhancing the communication flow between students and lecturers through the use of automated email dispatch and scheduled tasks (cron jobs).",
-            "demo": "https://sage-tapioca-de39e4.netlify.app/app",
+            "demo": "https://cduprojects.spinetail.cdu.edu.au/",
             "repo": "https://github.com/mong00x/capstone-conect",
             "year": "2023",
             "status": "in progress",
