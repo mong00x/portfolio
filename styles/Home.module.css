@@ -130,7 +130,7 @@
 
   );
   background-size: 100% auto;
-  -webkit-background-clip: text;
+  -webkit-background-clip: text;f
   -webkit-text-fill-color: transparent;
   animation: shine 18s linear infinite;
 } */
@@ -240,7 +240,7 @@
 /* medium */
 @media (max-width: 100em) and (min-width: 42em) {
   .container {
-    padding: 0 2rem;
+    padding: 0 6.5rem;
   }
 
   .navBtnContainer {
@@ -252,7 +252,7 @@
   } */
 
   .herobg{
-    margin:0 2rem;
+    margin:0  6.5rem;
     width: -webkit-fill-available;
     z-index:0;
     top:4.5rem;

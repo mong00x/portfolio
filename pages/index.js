@@ -17,7 +17,6 @@ import {
   Flex
 } from "@chakra-ui/react";
 
-import qrcode from "../public/qrcode.png";
 
 import Data from "../data.json";
 
@@ -81,10 +80,10 @@ export default function Home() {
               </PopoverTrigger>
               <PopoverContent  mr="4px" p="12px" gap="12px" bg={theme === "light" ? "white" : "black"} borderRadius={12} color={theme === "light" ? "#0f2b33" : "#f8f8f8"}>
                 <Flex flexDir="row-reverse" gap="24px" w="100%" justifyContent="space-between">
-                  <PopoverCloseButton borderRadius="12px"  fontSize="1rem" w="2rem" h="2rem" alignSelf="flex-end"/>
+                  <PopoverCloseButton borderRadius="12px"  fontSize="1rem" w="2.5rem" h="2.5rem" alignSelf="flex-end"/>
                   <PopoverHeader fontSize="20px">Check it on your phone</PopoverHeader>
                 </Flex>
-                <Image src="/qrcode.png" alt="qrcode" maxW="70vw" m="auto"/>
+                <Image src="/qrcode.png" alt="qrcode" w="70vw" maxW="600px" m="auto"/>
               </PopoverContent>
             </Popover>
              
