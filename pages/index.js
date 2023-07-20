@@ -29,15 +29,8 @@ export default function Home() {
   const [theme, setTheme] = useState("");
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      let defaultTheme = window.matchMedia("(prefers-color-scheme: dark)")
-        .matches
-        ? "dark"
-        : "light";
-
-      console.log(defaultTheme);
-      setTheme(defaultTheme);
-    }
+    setTheme("light");
+    
   }, []);
 
   const switchTheme = () => {
@@ -179,7 +172,7 @@ export default function Home() {
               <path _ngcontent-ced-c18="" 
               d="M114 4c-5.067 4.667-10.133 4.667-15.2 0S88.667-.667 83.6 4 73.467 8.667 68.4 4 58.267-.667 53.2 4 43.067 8.667 38 4 27.867-.667 22.8 4 12.667 8.667 7.6 4-2.533-.667-7.6 4s-10.133 4.667-15.2 0S-32.933-.667-38 4s-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0-10.133-4.667-15.2 0-10.133 4.667-15.2 0" 
               stroke={theme === "light" ? "#E1E3E1" : "#A1A3A1"}
-              stroke-linecap="square">
+              strokeLinecap="square">
                 </path></g></pattern><rect _ngcontent-ced-c18="" width="100%" height="100%" fill="url(#a)"></rect>
         </svg>
             <div className={styles.container}>

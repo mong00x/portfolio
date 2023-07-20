@@ -19,10 +19,11 @@ import {
   Alert,
 } from '@chakra-ui/react'
 
-import { PhoneIcon, AddIcon, WarningIcon } from '@chakra-ui/icons'
+import {WarningIcon } from '@chakra-ui/icons'
 
 
-import { ExternalLinkIcon } from '@chakra-ui/icons'
+
+
 
 const cardVariants = {
   offscreen: {
@@ -47,7 +48,7 @@ const demoRedirect = (demo) => {
   window.open(demo, "").focus();
 };
 
-const Project = ({key, data, theme}) => {
+const Project = ({key, data}) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <motion.div 

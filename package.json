@@ -15,6 +15,7 @@
     "@emotion/styled": "^11.10.6",
     "@fontsource/open-sans": "^5.0.5",
     "@fontsource/raleway": "^5.0.5",
+    "@ionic/react": "^7.2.0",
     "@popmotion/popcorn": "^0.4.4",
     "framer-motion": "^10.10.0",
     "next": "^13.2.4",
