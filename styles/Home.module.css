@@ -217,6 +217,19 @@
   align-items: center;
 }
 
+.qrBtn{
+  font-size: 1.8rem;
+  padding:1rem;
+  color: var(--text-color);
+
+}
+.qrBtn:hover{
+  color: var(--accent1-color);
+}
+
+.qrBtn:active{
+  color: var(--accent1-color);
+}
 /* large */
 @media (min-width: 140em) {
   .container {
