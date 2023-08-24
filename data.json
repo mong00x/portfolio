@@ -1,7 +1,29 @@
 {
     "projects": [
         {
-            "id": "1",
+            "id": "0",
+            "name": "Yolŋu Knowledge Framework",
+            "cover":"./Yolngu.png",
+            "description": "The Yolŋu Knowledge Framework is a meticulously curated digital platform, designed by the renowned Darwin local designer, Amber Young. Developed using WordPress, the website is dedicated to preserving the profound richness of the Yolngu Matha language and its encapsulated culture. It showcases an array of stories, traditions, and teachings, creating a bridge between the revered Yolŋu heritage and the digital realm. Hosted with the reliability of WordPress's infrastructure, visitors are assured a seamless and immersive experience, exemplifying a harmonious blend of cultural preservation and state-of-the-art web design.",
+            "demo": "https://musical-mousse-228605.netlify.app",
+            "repo": "https://github.com/mong00x/myGPT/",
+            "year": "2023",
+            "status": "in progress",
+            "stacks": [
+                {
+                    "name": "Wordpress",
+                    "icontype":"ionic",
+                    "icon": "logo-wordpress"
+                },
+                {   
+                    "name": "CSS",
+                    "icontype":"ionic",
+                    "icon": "logo-css3"
+                }
+            ]
+        },
+        {
+            "id": "2",
             "name": "MY GPT",
             "cover":"./MyGpt.png",
             "description": "MY GPT is an innovative web application inspired by OpenAI's GPT model, crafted using React.js and Django. It presents an engaging chatbot experience, offering interactive conversations. Hosted on Amazon Web Services (AWS), MY GPT guarantees superior performance and scalability, demonstrating a thoughtful blend of AI, modern web development, and cloud services.",
@@ -39,7 +61,7 @@
             ]
         },
         {
-            "id": "2",
+            "id": "3",
             "name": "Capstone Connect",
             "cover":"./CapstoneConnect.png",
             "description": "A comprehensive full-stack application, designed to streamline the capstone project selection process for students, enhancing the communication flow between students and lecturers through the use of automated email dispatch and scheduled tasks (cron jobs).",
@@ -69,7 +91,7 @@
             ]
         },
         {
-            "id": "3",
+            "id": "4",
             "name": "NT Bus Tracker",
             "cover":"./NTBusTracker.png",
             "description": "A high-fidelity Figma prototype that proposing a solution for real-time tracking and scheduling for the NT Bus System. This design vividly illustrates the potential enhancements to user interface and functionality, providing a new standard for public transit experiences.",
@@ -87,7 +109,7 @@
             ]
         },
         {
-            "id": "4",
+            "id": "5",
             "name": "Epic To-Do",
             "cover":"./EpicTodo.png",
             "description": "A React-based To-Do list web application, coupled with a highly responsive and aesthetically pleasing landing page for promotion. The application facilitates efficient task management, while the landing page, designed with responsiveness in mind, ensures optimal user experience across various devices and screen sizes.",
@@ -102,7 +124,7 @@
                     "icon": "logo-html5"
                 },
                 {
-                    "name": "CSS3",
+                    "name": "CSS",
                     "icontype":"ionic",
                     "icon": "logo-css3"
                 },
@@ -124,7 +146,7 @@
             ]
         },
         {
-            "id": "5",
+            "id": "6",
             "name": "Food Keeper",
             "cover":"./FoodKeeper.png",
             "description": "A versatile cross-platform mobile application, expressly crafted for youth groups, designed to oversee and manage home ingredients. This comprehensive tool simplifies inventory tracking and ensures optimal usage of resources, promoting both efficiency and sustainability in home cooking endeavors.",

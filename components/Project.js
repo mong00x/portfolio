@@ -63,7 +63,7 @@ const Project = ({key, data}) => {
       {
         data.status === "in progress" &&
         (
-          <Alert status='info' zIndex={10} position="absolute"  width="-webkit-fit-content"  fontSize="12px"   bg="rgba(144, 205, 244, 0.50)" borderRadius="8px 0 20px 0">
+          <Alert className={styles.alert} status='info' zIndex={10} position="absolute"  width="-webkit-fit-content"  bg="rgba(144, 205, 244, 0.75)" borderRadius="8px 0 8px 0">
           <WarningIcon pr="4px"/>
           This project is still under active development. 
         </Alert>

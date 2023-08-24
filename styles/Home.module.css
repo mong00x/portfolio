@@ -9,11 +9,11 @@
 
 
 .nav {
-  background-color: var(--primary-nav-color);
+  background-color: none; 
   -webkit-backdrop-filter: blur(16px);
   backdrop-filter: blur(16px);
   position: fixed;
-  width: 100vw;
+  width: 99.9vw;
   top: 0;
   z-index: 99;
   /* border-bottom: solid 4px var(--primary-nav-border-color); */
@@ -67,7 +67,7 @@
 .main {
   height: 100%;
   background-color: var(--primary-color);
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 .herobg{
@@ -144,6 +144,11 @@
 
 .hero .intro {
   margin: 0;
+  font-size: 1.65vw !important;
+}
+
+.projects > .container > h2{
+  font-weight: bold;
 }
 
 .projects {
@@ -190,6 +195,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .footerRight > a{
@@ -251,7 +257,7 @@
 }
 
 /* medium */
-@media (max-width: 100em) and (min-width: 42em) {
+@media (max-width: 100em) and (min-width: 40em) {
   .container {
     padding: 0 6.5rem;
   }
@@ -265,11 +271,14 @@
   } */
 
   .herobg{
+    display: none;
     margin:0  6.5rem;
     width: -webkit-fill-available;
     z-index:0;
-    top:4.5rem;
-    height:400px;
+    top:6.5rem;
+    height:12%;
+    min-height: 200px;
+    max-height: 360px;
     position:absolute;
     background-image: url("../public/hero.webp");
     background-repeat: no-repeat;
@@ -284,12 +293,12 @@
   }
 
   .greetings h1 {
-    font-size: 5rem;
+    font-size: 5vw;
   }
 
 
    .intro {
-    width: 90%;
+    width: 99%;
     font-size: 1.5rem !important;
     color: var(--dark-color);
   }
@@ -317,6 +326,7 @@
   } */
 
   .herobg{
+    display: none;
     margin-left: 1rem;
     width: -webkit-fill-available;
     margin-right: 1rem;
@@ -372,11 +382,14 @@
   }
 
   .herobg{
+    display: none;
     margin:0 0.5rem;
     width:-webkit-fill-available;
     z-index:0;
     top:4.5rem;
     height:9%;
+    min-height: 200px;
+    max-height: 400px;
     position:absolute;
     background-image: url("../public/hero.webp");
     background-size:900px;
@@ -386,13 +399,13 @@
 
   .greetings h1 {
     margin-top: .5rem;
-    font-size: 1.6rem;
+    font-size:2rem;
   }
   
 
   .hero .intro {
     width: 90%;
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
     color: var(--dark-color);
   }
 

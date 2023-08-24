@@ -92,13 +92,13 @@ export default function Home() {
                     <h1 className={styles.emoji}>👋</h1>
                   </div>
                   <p className={styles.intro}>
-                  As a Web Developer and occasional UI/UX Designer, 
-                  I find joy in creating dynamic, interactive digital experiences, 
-                  while maintaining a relaxed and innovative approach to my work.
+                  As a Web Developer with a keen eye for UI/UX design, 
+                  I take pride in crafting dynamic and interactive digital experiences. 
+                  I approach every project with innovation, ensuring a balance between creativity and functionality
                   </p>
                 </div>
               </Box>
-              <Box className={styles.herobg} filter='auto'  brightness={theme === "light" ? "25%" : "50%"} invert={theme === "light" ? "" : "0"}>
+              <Box  filter='auto'  brightness={theme === "light" ? "25%" : "50%"} invert={theme === "light" ? "" : "0"}>
             </Box>
           </section>
           <ChakraProvider>
@@ -165,11 +165,7 @@ export default function Home() {
         </svg>
             <div className={styles.container}>
               <div className={styles.footerContent}>
-                <div className={styles.footerLeft}>
-                  <p>
-                    ✨ Created by Meng Yuan © { new Date().getFullYear()}
-                  </p>
-                </div>
+                
                 <div className={styles.footerRight}>
                   <a className={styles.linkedin} href="
                     https://www.linkedin.com/in/meng-yuan-0a530b1b0/">
@@ -188,14 +184,19 @@ export default function Home() {
                       <ion-icon name="qr-code-outline"></ion-icon>
                     </button>
                     </PopoverTrigger>
-                    <PopoverContent  mr="4px" p="12px" gap="12px" bg={theme === "light" ? "white" : "black"} borderRadius={12} color={theme === "light" ? "#0f2b33" : "#f8f8f8"} >
+                    <PopoverContent  r='0' p="12px" gap="12px" maxWidth="75vw" bg={theme === "light" ? "white" : "black"} borderRadius={12} color={theme === "light" ? "#0f2b33" : "#f8f8f8"} >
                       <Flex flexDir="row-reverse" gap="24px" w="100%" justifyContent="space-between">
                         <PopoverCloseButton borderRadius="12px"  fontSize="1rem" w="2.5rem" h="2.5rem" alignSelf="flex-end"/>
-                        <PopoverHeader fontSize="20px">Check it on your phone</PopoverHeader>
+                        <PopoverHeader fontSize="16px">Also check it on your phone 🤳</PopoverHeader>
                       </Flex>
                       <Image src="/qrcode.png" alt="qrcode" w="70vw" maxW="360px" m="auto"/>
                     </PopoverContent>
                   </Popover>
+                </div>
+                <div className={styles.footerLeft}>
+                  <p>
+                    ✨ Created by Meng Yuan © { new Date().getFullYear()}
+                  </p>
                 </div>
               </div>
             </div>
