@@ -60,7 +60,7 @@ const Project = ({key, data}) => {
       viewport={{ once: true, amount: 0.3 }}
       variants={cardVariants}
     >
-      {
+      {/* {
         data.status === "in progress" &&
         (
           <Alert className={styles.alert} status='info' zIndex={10} position="absolute"  width="-webkit-fit-content"  bg="rgba(144, 205, 244, 0.75)" borderRadius="8px 0 8px 0">
@@ -68,7 +68,7 @@ const Project = ({key, data}) => {
           This project is still under active development. 
         </Alert>
         )
-      }
+      } */}
      
       <button onClick={() => demoRedirect(data.demo)}>
         {

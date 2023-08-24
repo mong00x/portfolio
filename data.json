@@ -1,27 +1,7 @@
 {
     "projects": [
-        {
-            "id": "0",
-            "name": "Yolŋu Knowledge Framework",
-            "cover":"./Yolngu.png",
-            "description": "The Yolŋu Knowledge Framework is a meticulously curated digital platform, designed by the renowned Darwin local designer, Amber Young. Developed using WordPress, the website is dedicated to preserving the profound richness of the Yolngu Matha language and its encapsulated culture. It showcases an array of stories, traditions, and teachings, creating a bridge between the revered Yolŋu heritage and the digital realm. Hosted with the reliability of WordPress's infrastructure, visitors are assured a seamless and immersive experience, exemplifying a harmonious blend of cultural preservation and state-of-the-art web design.",
-            "demo": "https://musical-mousse-228605.netlify.app",
-            "repo": "https://github.com/mong00x/myGPT/",
-            "year": "2023",
-            "status": "in progress",
-            "stacks": [
-                {
-                    "name": "Wordpress",
-                    "icontype":"ionic",
-                    "icon": "logo-wordpress"
-                },
-                {   
-                    "name": "CSS",
-                    "icontype":"ionic",
-                    "icon": "logo-css3"
-                }
-            ]
-        },
+       
+           
         {
             "id": "2",
             "name": "MY GPT",

@@ -119,8 +119,8 @@ export default function Home() {
             <div className={styles.container}>
               <h2>Projects</h2>
               <div className={styles.grid}>
-                {Data.projects.map((project) => (
-                  <Project key={project.id} data={project} theme={theme}/>
+              {Data.projects.map((project, index) => (
+                  <Project key={index} data={project} theme={theme}/>
                 ))}
               </div>
             </div>
