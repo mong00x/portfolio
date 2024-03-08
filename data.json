@@ -1,7 +1,32 @@
 {
     "projects": [
-       
-           
+       {
+        "id": "1",
+        "name": "Yolngu Knowledge Framework",
+        "cover":"./Yolngu.png",
+        "description": "The Yolngu Knowledge Framework website is a cultural landmark digital platform, co-created with local rangers and designed by a Darwin professional, featuring a dual-language interface in English and Yolngu Matha. It embodies a significant stride in marrying cutting-edge web development with profound cultural engagement, aiming to preserve and share the rich heritage of the Yolngu people. ",
+        "demo": "https://yolnguknowledgeframework.com.au/",
+        "repo": "",
+        "year": "2023",
+        "status": "",
+        "stacks": [
+            {
+                "name": "Wordpress",
+                "icontype":"ionic",
+                "icon": "logo-wordpress"
+            },
+            {
+                "name": "CSS",
+                "icontype":"ionic",
+                "icon": "logo-css3"
+            },
+            {
+                "name": "PHP",
+                "icontype":"PHP"    
+            }
+            
+        ]
+       },  
         {
             "id": "2",
             "name": "MY GPT",
@@ -24,8 +49,8 @@
                 
                 {
                     "name": "OpenAI API",
-                    "icontype":"ionic",
-                    "icon": "sparkles"
+                    "icontype":"openai"
+                    
                 },
                 {
                     "name": "AWS",
