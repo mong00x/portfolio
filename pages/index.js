@@ -30,10 +30,20 @@ export default function Home() {
   const [theme, setTheme] = useState("");
 
   useEffect(() => {
-    setTheme("light");
+    // if user time is after 6pm and before 6am and or system theme is dark
+    
+    // get time
+    const date = new Date();
+    console.log(date.getHours());
+    const hours = date.getHours();
+    setTheme(hours >= 18 || hours < 6 || window.matchMedia("(prefers-color-scheme: dark)").matches 
+    ?  "dark" 
+    : "light");
+
+    
     
   }, []);
-
+  const device = typeof window !== "undefined" && window.innerWidth > 768 ? "desktop" : "mobile";
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
@@ -67,7 +77,7 @@ export default function Home() {
 
 
 
-        <nav className={styles.nav}>
+        <nav className={styles.nav} backdropFilter="auto" backdropBlur="6px">
           <div className={styles.container}>
 
             {/* <button
@@ -198,11 +208,29 @@ export default function Home() {
                     </button>
                     </PopoverTrigger>
                     <PopoverContent  r='0' p="12px" gap="12px" maxWidth="75vw" bg={theme === "light" ? "white" : "black"} borderRadius={12} color={theme === "light" ? "#0f2b33" : "#f8f8f8"} >
-                      <Flex flexDir="row-reverse" gap="24px" w="100%" justifyContent="space-between">
-                        <PopoverCloseButton borderRadius="12px"  fontSize="1rem" w="2.5rem" h="2.5rem" alignSelf="flex-end"/>
-                        <PopoverHeader fontSize="16px" pl="18px">Also check it on your phone 🤳</PopoverHeader>
-                      </Flex>
-                      <Image src="/qrcode.png" alt="qrcode" w="70vw" maxW="360px" m="auto"/>
+                        {device === "desktop" ?
+                          (
+                            <Flex flexDir="column" gap="24px" w="100%" justifyContent="space-between">
+                              <Flex flexDir="row-reverse" justifyContent="space-between" w="100%" alignItems="center">
+                                <PopoverCloseButton borderRadius="12px"  fontSize="1rem" w="2.5rem" h="2.5rem" alignSelf="flex-end"/>
+                                <PopoverHeader fontSize="16px" pl="18px">Also check it on your phone 📱</PopoverHeader>
+                              </Flex>
+                              
+                              <Image src="/qrcode.png" alt="qrcode" w="70vw" maxW="360px" m="auto"/>
+                            </Flex>
+                          ) : (
+                            <Flex flexDir="column" gap="24px" w="100%" justifyContent="space-between">
+                              <Flex flexDir="row-reverse" justifyContent="space-between" w="100%" alignItems="center">
+                                <PopoverCloseButton borderRadius="12px"  fontSize="1rem" w="2.5rem" h="2.5rem" alignSelf="flex-end"/>
+                                <PopoverHeader fontSize="16px" pl="18px">🐈</PopoverHeader>
+                              </Flex>
+                              
+                              <Image src="/qrcode.png" alt="qrcode" w="50vw" maxW="360px" m="auto"/>
+                            </Flex>
+                            
+                          )
+                        }
+                      
                     </PopoverContent>
                   </Popover>
                 </div>
