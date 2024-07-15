@@ -9,14 +9,25 @@
 
 
 .nav {
-  background-color: none; 
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(16px);
+  background: none;
+  overflow: hidden;
   position: fixed;
   width: 99.9vw;
   top: 0;
   z-index: 99;
   /* border-bottom: solid 4px var(--primary-nav-border-color); */
+}
+.nav:before{
+  content: "";
+	position: absolute;
+	background: inherit;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	backdrop-filter: blur(4px) ; /* Apply blur effect */
+  -webkit-backdrop-filter: blur(4px);
 }
 
 /* .navBtnContainer {
@@ -168,6 +179,7 @@
 
 .footer{
   background-color: var(--primary-color);
+  margin-top:-1px;
   padding: 2rem 0;
   border-top: solid 4px var(--primary-nav-border-color);
 }
