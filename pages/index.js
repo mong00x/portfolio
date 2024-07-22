@@ -28,13 +28,16 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const [theme, setTheme] = useState("");
+  const [device, setDevice] = useState("");
+  useEffect(() => {
+    setDevice(window.innerWidth > 768 ? "desktop" : "mobile");
+  }, []);
 
   useEffect(() => {
     // if user time is after 6pm and before 6am and or system theme is dark
     
     // get time
     const date = new Date();
-    console.log(date.getHours());
     const hours = date.getHours();
     setTheme(hours >= 18 || hours < 6 || window.matchMedia("(prefers-color-scheme: dark)").matches 
     ?  "dark" 
@@ -43,7 +46,10 @@ export default function Home() {
     
     
   }, []);
-  const device = typeof window !== "undefined" && window.innerWidth > 768 ? "desktop" : "mobile";
+
+ 
+  
+
   const switchTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
