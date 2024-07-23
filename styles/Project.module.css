@@ -95,6 +95,7 @@
 
 .stacksWrapper {
   display: flex;
+  z-index: 10;
 }
 
 .stacksWrapper ion-icon,

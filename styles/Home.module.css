@@ -1,3 +1,4 @@
+
 .container {
   padding: 0 16em;
   margin:auto;
@@ -6,6 +7,8 @@
 .flex {
   display: flex;
 }
+
+
 
 
 .nav {
@@ -81,20 +84,6 @@
   padding-top: 6rem;
 }
 
-.herobg{
-  margin:0 5rem;
-  width: -webkit-fill-available;
-  z-index:0;
-  top:6rem;
-  height:500px;
-  position:absolute;
-  background-image: url("../public/hero.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  border-radius: 20px;
-}
-
 
 .greetings {
   z-index:1;
@@ -151,6 +140,20 @@
 }
 .hero .meng::-moz-selection {
   -webkit-text-fill-color: var(--accent1-light-color);
+}
+
+.heroBg{
+  z-index:0;
+  top:0px;
+  height:101vh;
+  position:fixed;
+  margin:auto;
+  width:100%;
+  background-image:
+  radial-gradient(at 44% 61%, hsla(61,82%,68%,.1) 0px, transparent 30vw),
+  radial-gradient(at 57% 60%, hsla(100,73%,67%,.16) 0px, transparent 26vw),
+  radial-gradient(at 47% 40%, hsla(209,86%,62%,.13) 0px, transparent 38vw),
+  radial-gradient(at 51% 36%, hsla(131,71%,73%,.1) 0px, transparent 31vw);
 }
 
 .hero .intro {
@@ -227,6 +230,7 @@
 }
 
 .devpost{
+  z-index: 1;
   font-size: 1rem;
   color: var(--text-color);
   text-decoration: none;
@@ -337,20 +341,7 @@
     padding: 6rem 0;
   } */
 
-  .herobg{
-    display: none;
-    margin-left: 1rem;
-    width: -webkit-fill-available;
-    margin-right: 1rem;
-    z-index: 0;
-    top: 4.5rem;
-    height: 8%;
-    position: absolute;
-    background-image: url(/_next/static/media/hero.cf28bbe8.webp);
-    background-size: 1000px;
-    background-attachment: fixed;
-    border-radius: 20px;
-  }
+
   .greetings {
     margin-top: 3rem;
   }

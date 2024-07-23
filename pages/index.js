@@ -109,6 +109,7 @@ export default function Home() {
 
         <main className={styles.main}>
           <section className={styles.hero} >
+                <div className={styles.heroBg}></div>
             
               <Box className={styles.container} >
                 <div className={styles.greetings}>
