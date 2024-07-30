@@ -86,13 +86,13 @@ export default function Home() {
         <nav className={styles.nav} backdropFilter="auto" backdropBlur="6px">
           <div className={styles.container}>
 
-            {/* <button
+            <button
               className={styles.brand}
               onClick={() => (window.location.href = "#")}
             >
-              Meng Yuan
-            </button> */}
-            {/* <div className={styles.navBtnGroup}></div> */}
+              M
+            </button>
+            <div className={styles.navBtnGroup}></div>
             <div className={styles.navBtnContainer}>
            
              
@@ -115,16 +115,15 @@ export default function Home() {
                 <div className={styles.greetings}>
                   <div className={(styles.flex, styles.title)} >
                     <h1 className={styles.meng}>
-                      Hi! <div className={styles.linebreaker}></div>I'm Meng
+                      Hi, <div className={styles.linebreaker}></div>I'm Meng!
                     </h1>
                     {/* make it pop with motion */}
                     
                     <h1 className={styles.emoji}>👋</h1>
                   </div>
                   <p className={styles.intro}>
-                  As a Web Developer with a keen eye for UI/UX design, 
-                  I take pride in crafting dynamic and interactive digital experiences. 
-                  I approach every project with innovation, ensuring a balance between creativity and functionality.
+                  I'm a Web Developer with a keen eye for UI/UX design. 
+                  I take pride in crafting dynamic and interactive digital experiences while ensuring a balance between creativity and functionality.
                   </p>
                 </div>
               </Box>
