@@ -27,7 +27,7 @@ const Project = dynamic(() => import("../components/Project.js"));
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  const [theme, setTheme] = useState("");
+  const [theme, setTheme] = useState('dark');
   const [device, setDevice] = useState("");
   useEffect(() => {
     setDevice(window.innerWidth > 768 ? "desktop" : "mobile");
