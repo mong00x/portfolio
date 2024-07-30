@@ -6,6 +6,8 @@
   box-shadow: var(--box-shadow);
   transition: all 0.2s;
   overflow: hidden;
+  position: relative;
+  z-index: 3;
 }
 
 .project:hover{
