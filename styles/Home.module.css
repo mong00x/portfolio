@@ -133,11 +133,12 @@
     #9483ff 70%,
     #ae83ff 100%
 
+
   );
   background-size: 100% auto;
-  -webkit-background-clip: text;f
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: shine 18s linear infinite;
+  animation: shine .5s linear infinite;
 } */
 
 .hero .meng::selection {
@@ -153,12 +154,12 @@
   height:101vh;
   position:fixed;
   margin:auto;
-  width:100%;
+  width:1200px;
   background-image:
-  radial-gradient(at 44% 61%, hsla(61,82%,68%,.1) 0px, transparent 30vw),
-  radial-gradient(at 57% 60%, hsla(100,73%,67%,.16) 0px, transparent 26vw),
-  radial-gradient(at 47% 40%, hsla(209,86%,62%,.13) 0px, transparent 38vw),
-  radial-gradient(at 51% 36%, hsla(131,71%,73%,.1) 0px, transparent 31vw);
+  radial-gradient(at 44% 61%, hsla(61,82%,68%,.1) 0px, transparent 600px),
+  radial-gradient(at 57% 60%, hsla(100,73%,67%,.16) 0px, transparent 400px),
+  radial-gradient(at 47% 40%, hsla(209,86%,62%,.13) 0px, transparent 450px),
+  radial-gradient(at 51% 36%, hsla(131,71%,73%,.1) 0px, transparent 550px);
 }
 
 .hero .intro {
