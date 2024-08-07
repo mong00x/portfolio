@@ -18,33 +18,52 @@ import {
 } from "@chakra-ui/react";
 
 import Script from "next/script";
-
 import Data from "../data.json";
-
 import dynamic from "next/dynamic";
 const Project = dynamic(() => import("../components/Project.js"));
 
 import { useState, useEffect } from "react";
 
+import { Octokit, App } from "octokit";
+
+const octokit = new Octokit({
+  auth: process.env.GITHUB_TOKEN,
+});
+
+const response = octokit.request("GET /users/{username}/repos", {
+  username: "mong00x",
+}).then((response) => {
+  console.log(response.data);
+  response.data.forEach((repo) => {
+    if (repo.private === false) {
+      console.log("Public Repo: ", repo.name);
+    } 
+  });
+});
+
+
+
+
+  
+
+
 export default function Home() {
+
   const [theme, setTheme] = useState('dark');
   const [device, setDevice] = useState("");
   useEffect(() => {
     setDevice(window.innerWidth > 768 ? "desktop" : "mobile");
   }, []);
 
+   
+
   useEffect(() => {
     // if user time is after 6pm and before 6am and or system theme is dark
-    
-    // get time
     const date = new Date();
     const hours = date.getHours();
     setTheme(hours >= 18 || hours < 6 || window.matchMedia("(prefers-color-scheme: dark)").matches 
     ?  "dark" 
     : "light");
-
-    
-    
   }, []);
 
  
@@ -80,6 +99,7 @@ export default function Home() {
 
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script noModule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 
 
 
@@ -162,7 +182,6 @@ export default function Home() {
               </div>
             </div>
           </section> */}
-          
           
 
         </main>
@@ -247,6 +266,8 @@ export default function Home() {
                 </div>
               </div>
             </div>
+            <pre>
+        </pre>
           </footer>
 
       </div>
@@ -254,3 +275,5 @@ export default function Home() {
     </>
   );
 }
+
+
